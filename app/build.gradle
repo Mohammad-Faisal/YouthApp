@@ -43,7 +43,9 @@ dependencies {
 
     //firebase ui
     implementation 'com.google.firebase:firebase-crash:11.0.4'
+
     compile 'com.firebaseui:firebase-ui-database:2.3.0'
+
 
     implementation 'com.firebaseui:firebase-ui-auth:2.3.0'
     //tab er jonno
