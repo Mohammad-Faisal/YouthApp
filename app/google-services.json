@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "811793930884",
+    "firebase_url": "https://youthapp-3d31a.firebaseio.com",
+    "project_id": "youthapp-3d31a",
+    "storage_bucket": "youthapp-3d31a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811793930884:android:f477c48e14b5b764",
+        "android_client_info": {
+          "package_name": "com.example.candor.youthapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811793930884-i7thi4p28t2f72u8numpjofmr3umih3v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.candor.youthapp",
+            "certificate_hash": "e4347784d5536d2267933a179f808a3812fad26f"
+          }
+        },
+        {
+          "client_id": "811793930884-f8oa203d2t2h2du9it6ijdgkgfm6rdrt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.candor.youthapp",
+            "certificate_hash": "3f99adf083837160f81f106f6c8702947259525e"
+          }
+        },
+        {
+          "client_id": "811793930884-6m1v4smgrd7h5eigir3oi1rp4bbde98h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxYn41K0gYUEgnn4tNUlmcZhyMmbgdmic"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811793930884-6m1v4smgrd7h5eigir3oi1rp4bbde98h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

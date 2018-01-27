@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.candor.youthapp.HOME.BLOG.CreateBlogActivity">
+
+
+    <ImageView
+        android:id="@+id/create_blog_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/color2"/>
+
+    <ImageButton
+        android:id="@+id/create_blog_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:src="@drawable/ic_camera_icon" />
+
+    <EditText
+        android:id="@+id/create_blog_title"
+        android:hint="@string/give_a_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/create_blog_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:id="@+id/create_blog_description"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/create_blog_title"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/create_blog_post_button"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/create_blog_description"
+        android:layout_centerHorizontal="true"
+        android:text="post" />
+
+</RelativeLayout>
