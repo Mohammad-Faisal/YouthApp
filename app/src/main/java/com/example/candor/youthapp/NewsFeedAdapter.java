@@ -187,4 +187,6 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         return position;
     }
 
+    public void balsal(){};
+
 }
