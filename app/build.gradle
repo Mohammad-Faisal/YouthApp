@@ -40,6 +40,7 @@ dependencies {
 
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 
+
     //firebase ui
     implementation 'com.google.firebase:firebase-crash:11.0.4'
     compile 'com.firebaseui:firebase-ui-database:2.3.0'
