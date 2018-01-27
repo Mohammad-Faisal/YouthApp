@@ -3772,6 +3772,10 @@
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.0.4.aar\\85e910b24cfb274385af215f68b9ee74\\res\\drawable-hdpi-v4\\powered_by_google_dark.png"
     },
     {
+        "merged": "D:\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_love_full.png.flat",
+        "source": "D:\\YouthApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_love_full.png"
+    },
+    {
         "merged": "D:\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_05_light.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\b8dbedbbb2ab25d2f734b414a9dc1509\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_05_light.png"
     },
@@ -6400,6 +6404,10 @@
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxxhdpi-v4\\quantum_ic_volume_off_white_36.png"
     },
     {
+        "merged": "D:\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_love_full.png.flat",
+        "source": "D:\\YouthApp\\app\\src\\main\\res\\drawable-hdpi\\ic_love_full.png"
+    },
+    {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_13_light.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_13_light.png"
     },
@@ -7018,6 +7026,10 @@
     {
         "merged": "D:\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b6918804a53c241a0ecf2991a6c63693\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "D:\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_love_full.png.flat",
+        "source": "D:\\YouthApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_love_full.png"
     },
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_dialog_close_dark.png.flat",
@@ -8526,6 +8538,10 @@
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\e9f3a21298248c3205f87dc00790e9a1\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "D:\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_love_full.png.flat",
+        "source": "D:\\YouthApp\\app\\src\\main\\res\\drawable-mdpi\\ic_love_full.png"
     },
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",

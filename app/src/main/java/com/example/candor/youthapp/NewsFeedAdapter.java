@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,13 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.example.candor.youthapp.HOME.POST.Posts;
 import com.example.candor.youthapp.LazyImageLoading.ImageLoader;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -36,6 +44,10 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     private int lastVisibleItem, totalItemCount;
     RecyclerView recyclerView;
     private Activity activity;
+    public boolean likeFunction = false;
+
+    private DatabaseReference mPostsDatabaseReference , mUserDatabaseReference ,  mRootRef;
+    private String mUserID;
 
 
     //initialize the inflator by yourself
@@ -54,6 +66,8 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         this.data = data;
         this.recyclerView = recyclerView;
         imageLoader=new ImageLoader(context);
+        this.mRootRef = FirebaseDatabase.getInstance().getReference();
+        this.mUserID = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
 
         final LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
@@ -96,13 +110,102 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         if (holder instanceof UserViewHolder) {
-            Posts post = data.get(position);
-            UserViewHolder userViewHolder = (UserViewHolder) holder;
+            final Posts post = data.get(position);
+            final UserViewHolder userViewHolder = (UserViewHolder) holder;
 
             userViewHolder.postCaption.setText(post.getCaption());
             userViewHolder.postDateTime.setText(post.getTime_and_date());
-            userViewHolder.postUserName.setText("Faisal");
             imageLoader.DisplayImage(post.getPost_image_url(),userViewHolder.postImage);
+            userViewHolder.postDateTime.setText(post.getTime_and_date());
+            userViewHolder.postLocaiton.setText(post.getLocation());
+            userViewHolder.postLikeCount.setText(post.getLike_cnt());
+
+
+
+            userViewHolder.postLikeButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    likeFunction = true;
+                    final String postPushID = post.getPost_push_id();
+                    mRootRef.child("likes").addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            if(likeFunction){
+                                if(dataSnapshot.child(postPushID).hasChild(mUserID)){ //like already exists
+                                    mRootRef.child("likes").child(postPushID).child(mUserID).removeValue();
+                                    //like count changing
+                                    String current_likes =String.valueOf(dataSnapshot.getChildrenCount());
+                                    likeFunction = false;
+                                    Log.d("Home Fragment    ", "like count is    "+ current_likes);
+                                    int number = Integer.parseInt(current_likes);
+                                    number--;
+                                    current_likes = String.valueOf(number);
+                                    userViewHolder.postLikeCount.setText(current_likes);
+                                    userViewHolder.postLikeButton.setImageResource(R.drawable.ic_love_empty);
+                                }
+                                else{
+                                    mRootRef.child("likes").child(postPushID).child(mUserID).setValue("y");
+                                    String current_likes =String.valueOf(dataSnapshot.getChildrenCount());
+                                    likeFunction = false;
+                                    int number = Integer.parseInt(current_likes);
+                                    number++;
+                                    current_likes = String.valueOf(number);
+                                    userViewHolder.postLikeCount.setText(current_likes);
+                                    userViewHolder.postLikeButton.setImageResource(R.drawable.ic_love_full);
+                                }
+                            }
+                            else{
+                                Log.d("inside else    " , "hups");
+                            }
+                        }
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+
+                }
+            });
+
+
+
+            // ------------ POPULATE USER DETAILS ----//
+            final String list_user_id = post.getUid();
+            mRootRef.child("users").child(list_user_id).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    String name = dataSnapshot.child("name").getValue().toString();
+                    final String thumb_image_url = dataSnapshot.child("thumb_image").getValue().toString();
+                    imageLoader.DisplayImage(thumb_image_url,userViewHolder.postUserImage);
+                    userViewHolder.postUserName.setText(name);
+                }
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                }
+            });
+
+            //---------------   SETTING IMAGE RESOURCE BASED ON THE LOGGED IN USER -----//
+            final String postPushID = post.getPost_push_id();
+            final String mUserID = post.getUid();
+            mRootRef.child("likes").child(postPushID).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+
+                    String current_likes =String.valueOf(dataSnapshot.getChildrenCount());
+                    userViewHolder.postLikeCount.setText(current_likes);
+                    if(dataSnapshot.hasChild(mUserID)){ //like already exists
+                        userViewHolder.postLikeButton.setImageResource(R.drawable.ic_love_full);
+                    }
+                    else{
+                        userViewHolder.postLikeButton.setImageResource(R.drawable.ic_love_empty);
+                    }
+                }
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
 
         } else if (holder instanceof LoadingViewHolder) {
             LoadingViewHolder loadingViewHolder = (LoadingViewHolder) holder;
@@ -187,7 +290,5 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         return position;
     }
 
-    public void balsal1(){};
 
-    public void balsal2(){};
 }

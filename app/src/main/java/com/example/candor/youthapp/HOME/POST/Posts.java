@@ -11,7 +11,7 @@ public class Posts {
     private String time_and_date;
     private String caption;
     private String post_image_url;
-    private String thumbs_up_cnt;
+    private String like_cnt;
     private String location;
     private String post_push_id;
     private long timestamp;
@@ -35,13 +35,13 @@ public class Posts {
         this.timestamp = timestamp;
     }
 
-    public Posts(String uid, String time_and_date, String caption, String post_image_url, String thumbs_up_cnt, String  location , String post_push_id , long timestamp) {
+    public Posts(String uid, String time_and_date, String caption, String post_image_url, String like_cnt, String  location , String post_push_id , long timestamp) {
 
         this.uid = uid;
         this.time_and_date = time_and_date;
         this.caption = caption;
         this.post_image_url = post_image_url;
-        this.thumbs_up_cnt = thumbs_up_cnt;
+        this.like_cnt = like_cnt;
         this.location = location;
         this.post_push_id = post_push_id;
         this.timestamp = timestamp;
@@ -82,12 +82,12 @@ public class Posts {
         this.post_image_url = post_image_url;
     }
 
-    public String getThumbs_up_cnt() {
-        return thumbs_up_cnt;
+    public String getLike_cnt() {
+        return like_cnt;
     }
 
-    public void setThumbs_up_cnt(String thumbs_up_cnt) {
-        this.thumbs_up_cnt = thumbs_up_cnt;
+    public void setLike_cnt_cnt(String like_cnt) {
+        this.like_cnt = like_cnt;
     }
 
     public String getLocation() {
