@@ -1,4 +1,4 @@
-package com.example.candor.youthapp;
+package com.example.candor.youthapp.HOME.POST;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,6 +14,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.example.candor.youthapp.HOME.POST.Posts;
 import com.example.candor.youthapp.LazyImageLoading.ImageLoader;
+import com.example.candor.youthapp.OnLoadMoreListener;
+import com.example.candor.youthapp.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

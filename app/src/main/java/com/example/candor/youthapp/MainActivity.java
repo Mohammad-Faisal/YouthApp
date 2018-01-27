@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.candor.youthapp.HOME.HomeFragment;
 import com.example.candor.youthapp.NotificationFragment.NotificationFragment;
+import com.example.candor.youthapp.PROFILE.ProfileActivity;
 import com.example.candor.youthapp.PROFILE.ProfileFragment;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.ErrorCodes;
@@ -76,6 +77,10 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_profile:
                     setFragment(mProfileFragment);
+                    /*Intent profileIntent = new Intent(MainActivity.this , ProfileActivity.class);
+                    profileIntent.putExtra("userID" , mUserID);
+                    startActivity(profileIntent);*/
+                    //setFragment(mProfileFragment);
                     return true;
             }
             return false;

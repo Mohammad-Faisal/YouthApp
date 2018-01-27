@@ -1,10 +1,8 @@
 package com.example.candor.youthapp.HOME.POST;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.example.candor.youthapp.NewsFeedAdapter;
 import com.example.candor.youthapp.OnLoadMoreListener;
 import com.example.candor.youthapp.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -27,10 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 import static java.lang.Math.min;
 

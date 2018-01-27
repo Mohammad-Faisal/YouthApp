@@ -2,22 +2,15 @@ package com.example.candor.youthapp.HOME.BLOG;
 
 
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.example.candor.youthapp.HOME.POST.Posts;
-import com.example.candor.youthapp.MainActivity;
-import com.example.candor.youthapp.NewsFeedAdapter;
-import com.example.candor.youthapp.OnLoadMoreListener;
+import com.example.candor.youthapp.HOME.POST.NewsFeedAdapter;
 import com.example.candor.youthapp.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class BlogFragment extends Fragment {

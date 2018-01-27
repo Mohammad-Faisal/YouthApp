@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\d27e87f7d434016740b2dad45eb309b0\AndroidManifest.xml:2:1-19:12
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\3ca28fa1502607a8ecbad356126a4a05\AndroidManifest.xml:2:1-6:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.5.1.aar\a7fb1da25593958eff36832b6e71ed9a\AndroidManifest.xml:2:1-12:12
@@ -84,43 +84,43 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Mohammad Faisal
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\4b6f305605750a1f655ad77bf702c7ff\AndroidManifest.xml:17:1-30:12
 MERGED from [android.arch.core:runtime:1.0.0-alpha8] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0-alpha8.aar\dc0ddc0dc2a8243eac155356985950b7\AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\33286610ccf782b5c6aa2d8ec64665f9\AndroidManifest.xml:17:1-28:12
-INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml
 		INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:6:5-80
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:5:5-80
 	android:name
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:6:22-77
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:5:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:7:5-81
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:6:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:8:5-79
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:7:22-76
 uses-feature#android.hardware.camera
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:9:5-84
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:9:5-11:35
 	android:required
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:9:58-81
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:11:9-32
 	android:name
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:9:19-57
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:10:9-47
 uses-permission#android.permission.INTERNET
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:10:5-67
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:13:5-67
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\d27e87f7d434016740b2dad45eb309b0\AndroidManifest.xml:11:5-67
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\d27e87f7d434016740b2dad45eb309b0\AndroidManifest.xml:11:5-67
 MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-2.3.0.aar\f66826f9f76daa7b0c29462d9b69c18f\AndroidManifest.xml:13:5-67
@@ -150,9 +150,9 @@ MERGED from [com.google.android.gms:play-services-iid:11.0.4] C:\Users\Mohammad 
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.0.4.aar\b823dd90c5f797b682b7038bd81fe052\AndroidManifest.xml:19:5-66
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.0.4.aar\b823dd90c5f797b682b7038bd81fe052\AndroidManifest.xml:19:5-66
 	android:name
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:10:22-64
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:13:22-64
 application
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:12:5-38:19
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:15:5-43:19
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\d27e87f7d434016740b2dad45eb309b0\AndroidManifest.xml:13:5-17:19
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\d27e87f7d434016740b2dad45eb309b0\AndroidManifest.xml:13:5-17:19
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\3ca28fa1502607a8ecbad356126a4a05\AndroidManifest.xml:5:5-20
@@ -286,53 +286,63 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Mohammad Faisal\.gra
 MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\33286610ccf782b5c6aa2d8ec64665f9\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\33286610ccf782b5c6aa2d8ec64665f9\AndroidManifest.xml:22:5-26:19
 	android:supportsRtl
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:20:9-35
 	android:label
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:18:9-41
 	android:roundIcon
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:16:9-54
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:19:9-54
 	android:icon
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:17:9-43
 	android:allowBackup
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:18:9-40
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:21:9-40
+	android:name
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:22:9-33
 activity#com.example.candor.youthapp.MainActivity
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:19:9-28:20
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:23:9-32:20
 	android:screenOrientation
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:22:13-49
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:26:13-49
 	android:label
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:21:13-56
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:25:13-56
 	android:name
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:20:13-41
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:24:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:23:13-27:29
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:30:27-74
 activity#com.example.candor.youthapp.HOME.BLOG.CreateBlogActivity
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:29:9-32:61
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:33:9-36:52
 	android:screenOrientation
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:32:13-49
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:36:13-49
 	android:label
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:31:13-63
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:35:13-63
 	android:name
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:30:13-57
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:34:13-57
 activity#com.example.candor.youthapp.HOME.POST.CreatePostActivity
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:33:9-75
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:37:9-66
 	android:name
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:33:19-63
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:37:19-63
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
-ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:35:9-36:58
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:38:9-40:59
 	android:theme
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:36:13-56
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:40:13-56
 	android:name
-		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:35:19-82
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:39:13-76
+activity#com.example.candor.youthapp.PROFILE.ProfileActivity
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:41:9-61
+	android:name
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:41:19-58
+activity#com.example.candor.youthapp.PROFILE.SettingsActivity
+ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:42:9-71
+	android:name
+		ADDED from D:\YouthApp\app\src\main\AndroidManifest.xml:42:19-59
 uses-sdk
 INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\YouthApp\app\src\main\AndroidManifest.xml

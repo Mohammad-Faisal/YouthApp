@@ -33,6 +33,7 @@
     <uses-permission android:name="com.example.candor.youthapp.permission.C2D_MESSAGE" />
 
     <application
+        android:name="com.example.candor.youthapp.YouthApp"
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
@@ -59,6 +60,8 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="com.example.candor.youthapp.PROFILE.ProfileActivity" />
+        <activity android:name="com.example.candor.youthapp.PROFILE.SettingsActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"
