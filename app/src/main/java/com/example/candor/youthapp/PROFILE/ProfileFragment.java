@@ -93,6 +93,7 @@ public class ProfileFragment extends Fragment {
 
         //firebase
         mCurrentUserID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        mUserID=mCurrentUserID;
         //mCurrentUserID = getIntent().getStringExtra("userID"); //jar profile e amra dhuksi
         mDatabaseReference = FirebaseDatabase.getInstance().getReference().child("users").child(mCurrentUserID);
         mStorage = FirebaseStorage.getInstance().getReference();
