@@ -32,6 +32,7 @@ import static java.lang.Math.min;
 public class NewsFeedFragment extends Fragment {
 
 
+    //for recyclcer view
     private List<Posts> posts;
     private List<Posts> container = new ArrayList<>();
     private NewsFeedAdapter newsFeedAdapter;
@@ -55,6 +56,7 @@ public class NewsFeedFragment extends Fragment {
     private DatabaseReference mMessageReference;
     private DatabaseReference mRootRef;
     private FirebaseUser mUser;
+
 
 
 
@@ -159,8 +161,6 @@ public class NewsFeedFragment extends Fragment {
             }
         });
     }
-
-
     private void loadMorePosts() {
         Log.d("news fragment", "loadmore post1");
         if(container.size() > cur_index)
@@ -176,7 +176,4 @@ public class NewsFeedFragment extends Fragment {
         }
     }
 
-    public void old(){
-        //from old
-    }
 }

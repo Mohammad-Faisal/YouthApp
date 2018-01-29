@@ -57,7 +57,7 @@ public class ChatActivity extends AppCompatActivity {
     private CircleImageView mImageIconTop;
     private ImageButton mAddContent , mSendMessage;
     private EditText mEditMessage;
-    private RecyclerView mMessageList;
+
     private SwipeRefreshLayout mSwipeRefreshlayout;
 
 
@@ -67,6 +67,7 @@ public class ChatActivity extends AppCompatActivity {
     private String mOtherUserName;
 
     //containers
+    private RecyclerView mMessageList;
     private final List<Messages> messageList = new ArrayList<>();
     private LinearLayoutManager mLinearLayout;
     private MessageAdapter mMessageAdapter;
@@ -318,7 +319,6 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
     }
-
 
     private void sendmessage() {
         String message = mEditMessage.getText().toString();

@@ -170,6 +170,7 @@ public class ProfileActivity extends AppCompatActivity {
                 if(image.equals("default")){
                 }
                 else{
+
                     Picasso.with(ProfileActivity.this).load(image).networkPolicy(NetworkPolicy.OFFLINE)
                             .placeholder(R.drawable.ic_blank_profile).into(mProfileBlurImage, new Callback() {
                         @Override

@@ -1,7 +1,9 @@
 package com.example.candor.youthapp.HOME.POST;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -12,17 +14,30 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import com.example.candor.youthapp.CHAT.MessageAdapter;
+import com.example.candor.youthapp.CHAT.Messages;
 import com.example.candor.youthapp.HOME.POST.Posts;
 import com.example.candor.youthapp.LazyImageLoading.ImageLoader;
 import com.example.candor.youthapp.OnLoadMoreListener;
+import com.example.candor.youthapp.PROFILE.ProfileActivity;
 import com.example.candor.youthapp.R;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.NetworkPolicy;
+import com.squareup.picasso.Picasso;
 
+import org.w3c.dom.Comment;
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -52,6 +67,13 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     private String mUserID;
 
 
+    //for comment
+    //containers
+    private final List<Messages> messageList = new ArrayList<>();
+    private LinearLayoutManager mLinearLayout;
+    private PostCommentAdapter mCommentAdapter;
+
+
     //initialize the inflator by yourself
     private LayoutInflater inflater;
 
@@ -69,6 +91,7 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         this.recyclerView = recyclerView;
         imageLoader=new ImageLoader(context);
         this.mRootRef = FirebaseDatabase.getInstance().getReference();
+        this.mRootRef.keepSynced(true);
         this.mUserID = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
 
@@ -117,7 +140,25 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
             userViewHolder.postCaption.setText(post.getCaption());
             userViewHolder.postDateTime.setText(post.getTime_and_date());
-            imageLoader.DisplayImage(post.getPost_image_url(),userViewHolder.postImage);
+            //imageLoader.DisplayImage(post.getPost_image_url(),userViewHolder.postImage);
+            /*Picasso.with(userViewHolder.postImage.getContext())
+                    .load(post.getPost_image_url())
+                    .fit()
+                    .into(userViewHolder.postImage);*/
+
+            Picasso.with(context).load(post.getPost_image_url()).networkPolicy(NetworkPolicy.OFFLINE)
+                    .placeholder(R.drawable.ic_blank_profile).into(userViewHolder.postImage, new Callback() {
+                @Override
+                public void onSuccess() {
+                    //do nothing if an image is found offline
+                }
+                @Override
+                public void onError() {
+                    Picasso.with(context).load(post.getPost_image_url()).placeholder(R.drawable.ic_blank_profile).into(userViewHolder.postImage);
+                }
+            });
+
+
             userViewHolder.postDateTime.setText(post.getTime_and_date());
             userViewHolder.postLocaiton.setText(post.getLocation());
             userViewHolder.postLikeCount.setText(post.getLike_cnt());
@@ -127,13 +168,13 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             userViewHolder.postLikeButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
                     likeFunction = true;
                     final String postPushID = post.getPost_push_id();
                     mRootRef.child("likes").addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
-                            if(likeFunction){
+
+                            if(likeFunction==true){
                                 if(dataSnapshot.child(postPushID).hasChild(mUserID)){ //like already exists
                                     mRootRef.child("likes").child(postPushID).child(mUserID).removeValue();
                                     //like count changing
@@ -166,7 +207,99 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
                         }
                     });
+                }
+            });
 
+            userViewHolder.postCommentButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Dialog commentDialog = new Dialog(context);
+                    commentDialog.setContentView(R.layout.comment_pop_up_dialog);
+
+
+                    //containers
+                    final RecyclerView mCommentList;
+                    final List<Comments> commentList = new ArrayList<>();
+                    LinearLayoutManager mLinearLayout;
+                    PostCommentAdapter mPostCommentAdapter;
+
+                    final String postPushID = post.getPost_push_id();
+                    //mRootRef.child("comments").child(postPushID).push().setValue(new Comments("hi" , "hlw"));
+                    //-------------LOADING COMMENTS------------//
+                    mRootRef.child("comments").child(postPushID).addChildEventListener(new ChildEventListener() {
+                        @Override
+                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                            Comments c = dataSnapshot.getValue(Comments.class);
+                            commentList.add(c);
+                        }
+                        @Override
+                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+                        }
+                        @Override
+                        public void onChildRemoved(DataSnapshot dataSnapshot) {
+                        }
+                        @Override
+                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                        }
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
+
+                     final TextView commentBox  = commentDialog.findViewById(R.id.comment_write);
+                     ImageButton commentPost =  commentDialog.findViewById(R.id.comment_post);
+
+                     commentPost.setOnClickListener(new View.OnClickListener() {
+                         @Override
+                         public void onClick(View view) {
+
+                             Comments  comment =  new Comments(commentBox.getText().toString() , mUserID );
+                             commentBox.setText("");
+                             mRootRef.child("comments").child(postPushID).push().setValue(comment).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                 @Override
+                                 public void onSuccess(Void aVoid) {
+                                     Log.d("comment sstatus  " , "done !");
+                                 }
+                             });
+                         }
+                     });
+
+
+
+                    //--------- SETTING THE COMMENT ADAPTERS --//
+                    mPostCommentAdapter = new PostCommentAdapter(commentList);
+                    mCommentList = commentDialog.findViewById(R.id.comment_list);
+                    mLinearLayout = new LinearLayoutManager(context);
+                    mCommentList.hasFixedSize();
+                    mCommentList.setLayoutManager(mLinearLayout);
+                    mCommentList.setAdapter(mPostCommentAdapter);
+
+
+                    commentDialog.show();
+                    Log.d("comment" , "asche  ");
+                }
+            });
+
+
+            userViewHolder.postUserImage.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String destinationUserID = post.getUid();
+                    Intent profileIntent = new Intent(context , ProfileActivity.class);
+                    profileIntent.putExtra("userID" , destinationUserID);
+                    context.startActivity(profileIntent);
+                }
+            });
+
+            userViewHolder.postUserName.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String destinationUserID = post.getUid();
+                    Intent profileIntent = new Intent(context , ProfileActivity.class);
+                    profileIntent.putExtra("userID" , destinationUserID);
+                    context.startActivity(profileIntent);
                 }
             });
 
@@ -189,7 +322,6 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
             //---------------   SETTING IMAGE RESOURCE BASED ON THE LOGGED IN USER -----//
             final String postPushID = post.getPost_push_id();
-            final String mUserID = post.getUid();
             mRootRef.child("likes").child(postPushID).addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
@@ -219,11 +351,9 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public int getItemCount() {
         return data == null ? 0 : data.size();
     }
-
     public void setLoaded() {
         isLoading = false;
     }
-
     // "Loading item" ViewHolder
     private class LoadingViewHolder extends RecyclerView.ViewHolder {
         public ProgressBar progressBar;

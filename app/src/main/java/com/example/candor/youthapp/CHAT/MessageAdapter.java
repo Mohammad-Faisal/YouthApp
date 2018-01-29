@@ -70,17 +70,12 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
             }
         }*/
     }
-
-
     @Override public int getItemViewType(int position) {
         mAuth = FirebaseAuth.getInstance();
         String current_user_id = mAuth.getCurrentUser().getUid();
         if (mMessageList.get(position).getFrom().equals(current_user_id)) return MESSAGE_SENT;
         return MESSAGE_RECEIVED;
     }
-
-
-
     @Override
     public int getItemCount() {
         return mMessageList.size();
@@ -95,6 +90,4 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
             messageText = itemView.findViewById(R.id.message_item_text);
         }
     }
-
-
 }
