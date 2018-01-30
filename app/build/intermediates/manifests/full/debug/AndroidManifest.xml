@@ -63,6 +63,7 @@
         <activity android:name="com.example.candor.youthapp.PROFILE.ProfileActivity" />
         <activity android:name="com.example.candor.youthapp.PROFILE.SettingsActivity" />
         <activity android:name="com.example.candor.youthapp.CHAT.ChatActivity" />
+        <activity android:name="com.example.candor.youthapp.HOME.POST.LikersActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"

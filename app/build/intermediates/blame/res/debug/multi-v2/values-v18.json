@@ -1,21 +1,6 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\YouthApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b6918804a53c241a0ecf2991a6c63693\\res\\values-v18\\values-v18.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
             "map": [
                 {

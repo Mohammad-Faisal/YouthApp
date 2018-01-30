@@ -141,10 +141,8 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             userViewHolder.postCaption.setText(post.getCaption());
             userViewHolder.postDateTime.setText(post.getTime_and_date());
             //imageLoader.DisplayImage(post.getPost_image_url(),userViewHolder.postImage);
-            /*Picasso.with(userViewHolder.postImage.getContext())
-                    .load(post.getPost_image_url())
-                    .fit()
-                    .into(userViewHolder.postImage);*/
+
+
 
             Picasso.with(context).load(post.getPost_image_url()).networkPolicy(NetworkPolicy.OFFLINE)
                     .placeholder(R.drawable.ic_blank_profile).into(userViewHolder.postImage, new Callback() {
@@ -188,7 +186,7 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                                     userViewHolder.postLikeButton.setImageResource(R.drawable.ic_love_empty);
                                 }
                                 else{
-                                    mRootRef.child("likes").child(postPushID).child(mUserID).setValue("y");
+                                    mRootRef.child("likes").child(postPushID).child(mUserID).setValue(new Likes(mUserID));
                                     String current_likes =String.valueOf(dataSnapshot.getChildrenCount());
                                     likeFunction = false;
                                     int number = Integer.parseInt(current_likes);
@@ -266,10 +264,8 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                          }
                      });
 
-
-
                     //--------- SETTING THE COMMENT ADAPTERS --//
-                    mPostCommentAdapter = new PostCommentAdapter(commentList);
+                    mPostCommentAdapter = new PostCommentAdapter(commentList , context);
                     mCommentList = commentDialog.findViewById(R.id.comment_list);
                     mLinearLayout = new LinearLayoutManager(context);
                     mCommentList.hasFixedSize();
@@ -282,6 +278,14 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 }
             });
 
+            userViewHolder.postLikeCount.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent likersIntent = new Intent(context , LikersActivity.class);
+                    likersIntent.putExtra("postID" , post.getPost_push_id());
+                    context.startActivity(likersIntent);
+                }
+            });
 
             userViewHolder.postUserImage.setOnClickListener(new View.OnClickListener() {
                 @Override

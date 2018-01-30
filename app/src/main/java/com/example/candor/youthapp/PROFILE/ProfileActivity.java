@@ -68,8 +68,6 @@ public class ProfileActivity extends AppCompatActivity {
     private FirebaseUser mUser;
     private StorageReference mStorage;
     private FirebaseAuth mAuth;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
