@@ -24,4 +24,18 @@
         <item name="android:background">@color/black_overlay</item>
     </style>
 
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name = "android:layout_marginTop">10dp</item>
+        <item name = "android:layout_marginBottom">10dp</item>
+        <item name = "android:layout_marginRight">5dp</item>
+        <item name = "android:layout_marginLeft">5dp</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@color/color2</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
 </resources>

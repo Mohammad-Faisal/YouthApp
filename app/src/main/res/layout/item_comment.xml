@@ -14,7 +14,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="1.0">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/comment_item_image"
@@ -23,38 +24,47 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/ic_blank_profile"/>
+                android:src="@drawable/ic_blank_profile"
+                android:layout_weight="0.1"/>
+
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_weight="0.8">
 
 
                 <TextView
                     android:id="@+id/comment_item_name"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Name"
-                    android:textColor="@android:color/black"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
-                    />
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
                 <TextView
                     android:id="@+id/comment_item_text"
-                    android:layout_weight="1"
-                    android:text="Comment posted by the user"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
-                    />
+                    android:layout_weight="1"
+                    android:text="Comment posted by the user" />
 
             </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_love_empty" />
 
 
 

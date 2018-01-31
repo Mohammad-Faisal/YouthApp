@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.candor.youthapp.CHAT.ChatActivity;
+import com.example.candor.youthapp.NotificationFragment.Notifications;
 import com.example.candor.youthapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -27,6 +28,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ServerValue;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -39,6 +41,9 @@ import com.theartofdev.edmodo.cropper.CropImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -49,9 +54,9 @@ public class ProfileActivity extends AppCompatActivity {
 
     //widgets
     private ImageView mProfileBlurImage , mProfileImage;
-    private ImageButton mProfileImageChangeButton;
+    private ImageButton mProfileSendMessageButton;
     private TextView mProfileName , mProfileLocation , mProfilePhoneNumber , mProfileEmail , mProfileBloodGroup , mProfileDateOfBirth , mProfileBio ;
-    private Button mProfileEditButton;
+    private Button mProfileEditButton ,mProfileFollowButton;
     private EditText mProfilePhoneNumberEdit;
 
     //toolbar
@@ -61,10 +66,12 @@ public class ProfileActivity extends AppCompatActivity {
     //variables
     private String mUserID;
     private String mCurrentUserID;
+    int active = 0;
+    int followingState = 0;  //0 mane ami follow kortesina 1 mane follow kortesi
 
 
     //firebase
-    private DatabaseReference mDatabaseReference;
+    private DatabaseReference mDatabaseReference , mRootRef;
     private FirebaseUser mUser;
     private StorageReference mStorage;
     private FirebaseAuth mAuth;
@@ -77,6 +84,7 @@ public class ProfileActivity extends AppCompatActivity {
         mUserID = FirebaseAuth.getInstance().getCurrentUser().getUid();
         mCurrentUserID = getIntent().getStringExtra("userID"); //jar profile e amra dhuksi
         mDatabaseReference = FirebaseDatabase.getInstance().getReference().child("users").child(mCurrentUserID);
+        mRootRef = FirebaseDatabase.getInstance().getReference();
         mStorage = FirebaseStorage.getInstance().getReference();
 
 
@@ -96,12 +104,13 @@ public class ProfileActivity extends AppCompatActivity {
 
         mProfileImage = findViewById(R.id.profile_image);
         mProfileBlurImage = findViewById(R.id.profile_blur_image);
-        mProfileImageChangeButton = findViewById(R.id.profile_image_change_button);
+        mProfileSendMessageButton = findViewById(R.id.profile_send_message_button);
         mProfileEditButton = findViewById(R.id.profile_edit_button);
+        mProfileFollowButton = findViewById(R.id.profile_follow_button);
 
 
 
-        mProfileImageChangeButton.setOnClickListener(new View.OnClickListener() {
+        mProfileSendMessageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent chatIntent  = new Intent(ProfileActivity.this , ChatActivity.class);
@@ -114,7 +123,7 @@ public class ProfileActivity extends AppCompatActivity {
        /* mProfileImageChangeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //using the library of crop image
+                //using the library of crop imagef
                 CropImage.activity()
                         .setGuidelines(CropImageView.Guidelines.ON)
                         .setAspectRatio(1,1)
@@ -130,14 +139,93 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        if(mUserID.equals(mCurrentUserID)){//own id
-            mProfileImageChangeButton.setVisibility(View.GONE);
+        if(mUserID.equals(mCurrentUserID)){
+            mProfileSendMessageButton.setVisibility(View.GONE);
+            mProfileFollowButton.setVisibility(View.GONE);
             mProfileEditButton.setVisibility(View.VISIBLE);
         }
         else{
-            mProfileImageChangeButton.setVisibility(View.VISIBLE);
+            mProfileFollowButton.setVisibility(View.VISIBLE);
+            mProfileSendMessageButton.setVisibility(View.VISIBLE);
             mProfileEditButton.setVisibility(View.GONE);
         }
+
+        //mUserid hoile je login kore ase tar id
+        mRootRef.child("followings").child(mUserID).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if(dataSnapshot.hasChild(mCurrentUserID)){
+                    mProfileFollowButton.setText("following");
+                    followingState = 1;
+                }else{
+                    mProfileFollowButton.setText("follow");
+                    followingState = 0;
+                }
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        mProfileFollowButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(followingState == 0){   //currently not following after click i will follow this person
+                    followingState = 1;
+
+                    //  --------- GETTING THE DATE AND TIME ----------//
+                    Calendar c = Calendar.getInstance();
+                    SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+                    String formattedDate = df.format(c.getTime());
+
+                    // ------- BUILDING A NOTIFICATION FOR THIS EVENT -----//
+                    String followNotificatoinPushID = mRootRef.child("notifications").child(mCurrentUserID).push().getKey();
+                    Notifications pushNoti = new Notifications( "follow" ,mUserID , "null" , ServerValue.TIMESTAMP.toString() , "n"  );
+
+                    mRootRef.child("notifications").child(mCurrentUserID).child(followNotificatoinPushID).setValue(pushNoti);
+
+                    //------- SETTING THE INFORMATION THAT NOW I AM FOLLOWING THIS ID ------//
+                    Map<String, String> followingData = new HashMap<>();
+                    followingData.put("id" , mCurrentUserID);
+                    followingData.put("date" , formattedDate);
+                    followingData.put("notificationID", followNotificatoinPushID);
+                    mRootRef.child("followings").child(mUserID).child(mCurrentUserID).setValue(followingData);
+
+                    //------- SETTING THE INFORMATION THAT NOW I AM FA FOLLOWER OF THIS ID ------//
+                    Map<String, String> followerData = new HashMap<>();
+                    followerData.put("id" , mUserID);
+                    followerData.put("date" , formattedDate);
+                    followerData.put("notificationID", followNotificatoinPushID);
+                    mRootRef.child("followers").child(mCurrentUserID).child(mUserID).setValue(followerData);
+
+                    mProfileFollowButton.setText("following");
+
+                }else{  //currently following this person after clickhin i will not fololo
+                    followingState = 0;
+                    active = 1;
+                     mRootRef.child("followers").child(mCurrentUserID).child(mUserID).addValueEventListener(new ValueEventListener() {
+                         @Override
+                         public void onDataChange(DataSnapshot dataSnapshot) {
+                             if(active ==1 ){
+                                 active = 0 ;
+                                 String notificatoinPushID = dataSnapshot.child("notificationID").getValue().toString();
+                                 mRootRef.child("notifications").child(mCurrentUserID).child(notificatoinPushID).removeValue();
+                                 mRootRef.child("followings").child(mUserID).child(mCurrentUserID).removeValue();
+                                 mRootRef.child("followers").child(mCurrentUserID).child(mUserID).removeValue();
+                                 mProfileFollowButton.setText("follow");
+
+                             }
+                         }
+                         @Override
+                         public void onCancelled(DatabaseError databaseError) {
+
+                         }
+                     });
+                }
+            }
+        });
 
 
         mDatabaseReference.keepSynced(true);

@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.candor.youthapp.HOME.POST.Posts;
-import com.example.candor.youthapp.HOME.POST.NewsFeedAdapter;
+import com.example.candor.youthapp.HOME.POST.CREATE.Posts;
+import com.example.candor.youthapp.HOME.POST.LOAD.NewsFeedAdapter;
 import com.example.candor.youthapp.R;
 
 import java.util.List;

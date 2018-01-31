@@ -14,9 +14,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.candor.youthapp.HOME.BLOG.CreateBlogActivity;
-import com.example.candor.youthapp.HOME.POST.CreatePostActivity;
+import com.example.candor.youthapp.HOME.POST.CREATE.CreatePostActivity;
 import com.example.candor.youthapp.HOME.BLOG.BlogFragment;
-import com.example.candor.youthapp.HOME.POST.NewsFeedFragment;
+import com.example.candor.youthapp.HOME.POST.LOAD.NewsFeedFragment;
 import com.example.candor.youthapp.R;
 
 import java.util.ArrayList;

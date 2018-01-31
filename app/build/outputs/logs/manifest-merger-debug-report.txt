@@ -325,10 +325,10 @@ ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifes
 		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:35:13-63
 	android:name
 		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:34:13-57
-activity#com.example.candor.youthapp.HOME.POST.CreatePostActivity
-ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:37:9-66
+activity#com.example.candor.youthapp.HOME.POST.CREATE.CreatePostActivity
+ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:37:9-73
 	android:name
-		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:37:19-63
+		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:37:19-70
 activity#com.theartofdev.edmodo.cropper.CropImageActivity
 ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:38:9-40:59
 	android:theme
@@ -347,10 +347,10 @@ activity#com.example.candor.youthapp.CHAT.ChatActivity
 ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:43:9-55
 	android:name
 		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:43:19-52
-activity#com.example.candor.youthapp.HOME.POST.LikersActivity
-ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:44:9-71
+activity#com.example.candor.youthapp.HOME.POST.LIKE.LikersActivity
+ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:44:9-76
 	android:name
-		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:44:19-59
+		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:44:19-64
 uses-sdk
 INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml

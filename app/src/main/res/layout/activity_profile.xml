@@ -28,7 +28,7 @@
         android:id="@+id/profile_image" />
 
     <ImageButton
-        android:id="@+id/profile_image_change_button"
+        android:id="@+id/profile_send_message_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/cardView"
@@ -308,6 +308,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Edit"
+        android:layout_alignStart="@+id/cardView"
+        android:layout_below="@+id/cardView"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <Button
+        android:id="@+id/profile_follow_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Follow"
         android:layout_alignStart="@+id/cardView"
         android:layout_below="@+id/cardView"
         android:layout_marginTop="8dp"

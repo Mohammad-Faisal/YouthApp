@@ -34,14 +34,14 @@
             android:name=".HOME.BLOG.CreateBlogActivity"
             android:label="@string/title_activity_create_blog"
             android:screenOrientation="portrait" />
-        <activity android:name=".HOME.POST.CreatePostActivity" />
+        <activity android:name=".HOME.POST.CREATE.CreatePostActivity" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name=".PROFILE.ProfileActivity" />
         <activity android:name=".PROFILE.SettingsActivity" />
         <activity android:name=".CHAT.ChatActivity" />
-        <activity android:name=".HOME.POST.LikersActivity"></activity>
+        <activity android:name=".HOME.POST.LIKE.LikersActivity"></activity>
     </application>
 
 </manifest>
