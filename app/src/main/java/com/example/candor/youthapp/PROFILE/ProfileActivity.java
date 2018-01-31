@@ -108,6 +108,15 @@ public class ProfileActivity extends AppCompatActivity {
         mProfileEditButton = findViewById(R.id.profile_edit_button);
         mProfileFollowButton = findViewById(R.id.profile_follow_button);
 
+        Button logout = findViewById(R.id.profile_logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                finish();
+            }
+        });
+
 
 
         mProfileSendMessageButton.setOnClickListener(new View.OnClickListener() {
@@ -118,18 +127,6 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivity(chatIntent);
             }
         });
-
-
-       /* mProfileImageChangeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //using the library of crop imagef
-                CropImage.activity()
-                        .setGuidelines(CropImageView.Guidelines.ON)
-                        .setAspectRatio(1,1)
-                        .start(ProfileActivity.this);
-            }
-        });*/
 
         mProfileEditButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -182,8 +179,7 @@ public class ProfileActivity extends AppCompatActivity {
 
                     // ------- BUILDING A NOTIFICATION FOR THIS EVENT -----//
                     String followNotificatoinPushID = mRootRef.child("notifications").child(mCurrentUserID).push().getKey();
-                    Notifications pushNoti = new Notifications( "follow" ,mUserID , "null" , ServerValue.TIMESTAMP.toString() , "n"  );
-
+                    Notifications pushNoti = new Notifications( "follow" ,mUserID , "null" , ServerValue.TIMESTAMP.toString()  , "n"  );
                     mRootRef.child("notifications").child(mCurrentUserID).child(followNotificatoinPushID).setValue(pushNoti);
 
                     //------- SETTING THE INFORMATION THAT NOW I AM FOLLOWING THIS ID ------//

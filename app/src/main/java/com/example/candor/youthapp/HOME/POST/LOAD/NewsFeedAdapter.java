@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -15,15 +14,16 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.candor.youthapp.CHAT.Messages;
 import com.example.candor.youthapp.HOME.POST.COMMENT.Comments;
 import com.example.candor.youthapp.HOME.POST.COMMENT.PostCommentAdapter;
-import com.example.candor.youthapp.HOME.POST.CREATE.Posts;
+import com.example.candor.youthapp.HOME.POST.CREATE_SHOW.Posts;
 import com.example.candor.youthapp.HOME.POST.LIKE.LikersActivity;
 import com.example.candor.youthapp.HOME.POST.LIKE.Likes;
 import com.example.candor.youthapp.LazyImageLoading.ImageLoader;
-import com.example.candor.youthapp.OnLoadMoreListener;
+import com.example.candor.youthapp.NotificationFragment.Notifications;
 import com.example.candor.youthapp.PROFILE.ProfileActivity;
 import com.example.candor.youthapp.R;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -33,6 +33,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ServerValue;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.NetworkPolicy;
@@ -40,9 +41,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
+import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -164,20 +164,27 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             userViewHolder.postLocaiton.setText(post.getLocation());
             userViewHolder.postLikeCount.setText(post.getLike_cnt());
 
+            //-- LIKE BUTTON FUNCTIONALITY --//
             userViewHolder.postLikeButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     likeFunction = true;
                     final String postPushID = post.getPost_push_id();
+
                     mRootRef.child("likes").addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             if(likeFunction==true){
                                 if(dataSnapshot.child(postPushID).hasChild(mUserID)){ //like already exists
+
+                                    likeFunction = false;
+                                    String notiID = dataSnapshot.child(postPushID).child(mUserID).child("notificationID").getValue().toString();
                                     mRootRef.child("likes").child(postPushID).child(mUserID).removeValue();
+                                    mRootRef.child("notifications").child(post.getUid()).child(notiID).removeValue();
+
                                     //like count changing
                                     String current_likes =String.valueOf(dataSnapshot.getChildrenCount());
-                                    likeFunction = false;
+
                                     Log.d("Home Fragment    ", "like count is    "+ current_likes);
                                     int number = Integer.parseInt(current_likes);
                                     number--;
@@ -185,18 +192,26 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
 
                                     //updating number of likes
-                                    mRootRef.child("posts").child(postPushID).child("thumbs_up_cnt").setValue(current_likes);
+                                    mRootRef.child("posts").child(postPushID).child("like_cnt").setValue(current_likes);
                                     userViewHolder.postLikeCount.setText(current_likes);
                                     userViewHolder.postLikeButton.setImageResource(R.drawable.ic_love_empty);
                                 }
                                 else{
-                                    mRootRef.child("likes").child(postPushID).child(mUserID).setValue(new Likes(mUserID));
+
+                                    String time_stamp = String.valueOf(new Date().getTime());
+                                    // ------- BUILDING A NOTIFICATION FOR THIS EVENT -----//
+                                    String likeNotificatoinPushID = mRootRef.child("notifications").child(post.getUid()).push().getKey();
+                                    Notifications pushNoti = new Notifications( "like" ,mUserID , postPushID ,time_stamp , "n"  );
+                                    mRootRef.child("notifications").child(post.getUid()).child(likeNotificatoinPushID).setValue(pushNoti);
+
+                                    //------ SETTING THE LIKES NOTIFICATION IN THE DATABASE TO USE IT IN DELETION ---//
+                                    mRootRef.child("likes").child(postPushID).child(mUserID).setValue(new Likes(mUserID , likeNotificatoinPushID));
                                     String current_likes =String.valueOf(dataSnapshot.getChildrenCount());
                                     likeFunction = false;
                                     int number = Integer.parseInt(current_likes);
                                     number++;
                                     current_likes = String.valueOf(number);
-                                    mRootRef.child("posts").child(postPushID).child("thumbs_up_cnt").setValue(current_likes);
+                                    mRootRef.child("posts").child(postPushID).child("like_cnt").setValue(current_likes);
                                     userViewHolder.postLikeCount.setText(current_likes);
                                     userViewHolder.postLikeButton.setImageResource(R.drawable.ic_love_full);
                                 }
@@ -230,6 +245,7 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
 
 
+            //----- SETTING  COMMENT -//
             userViewHolder.postCommentButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -275,7 +291,16 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                      commentPost.setOnClickListener(new View.OnClickListener() {
                          @Override
                          public void onClick(View view) {
-                             Comments  comment =  new Comments(commentBox.getText().toString() , mUserID , postPushID );
+                             //Toast.makeText(context, "comment posted !!!", Toast.LENGTH_SHORT).show();
+
+                             String time_stamp = String.valueOf(new Date().getTime());
+                             // ------- BUILDING A NOTIFICATION FOR THIS EVENT -----//
+                             String commentNotificatoinPushID = mRootRef.child("notifications").child(post.getUid()).push().getKey();
+                             Notifications pushNoti = new Notifications( "comment" ,mUserID , postPushID , time_stamp,"n"  );
+                             mRootRef.child("notifications").child(post.getUid()).child(commentNotificatoinPushID).setValue(pushNoti);
+
+
+                             Comments  comment =  new Comments(commentBox.getText().toString() , mUserID , postPushID  , commentNotificatoinPushID  , time_stamp);
                              commentBox.setText("");
                              mRootRef.child("comments").child(postPushID).push().setValue(comment).addOnSuccessListener(new OnSuccessListener<Void>() {
                                  @Override

@@ -8,6 +8,14 @@
     tools:context="com.example.candor.youthapp.PROFILE.ProfileActivity">
 
 
+    <Button
+        android:id="@+id/profile_logout"
+        android:text="logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profile_image"
+        android:layout_centerHorizontal="true" />
+
     <ImageView
         android:id="@+id/profile_blur_image"
         android:layout_width="match_parent"

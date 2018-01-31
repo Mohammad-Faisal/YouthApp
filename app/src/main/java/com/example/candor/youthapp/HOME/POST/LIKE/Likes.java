@@ -6,11 +6,22 @@ package com.example.candor.youthapp.HOME.POST.LIKE;
 
 public class Likes {
     String Uid;
+    String notificationID;
 
     public Likes() {}
 
-    public Likes(String uid) {
-        Uid = uid;
+    public String getNotificationID() {
+        return notificationID;
+    }
+
+    public void setNotificationID(String notificationID) {
+        this.notificationID = notificationID;
+    }
+
+    public Likes(String uid , String notificationID) {
+        this.Uid = uid;
+        this.notificationID = notificationID;
+
     }
 
     public String getUid() {

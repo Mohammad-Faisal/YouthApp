@@ -33,7 +33,7 @@
     <uses-permission android:name="com.example.candor.youthapp.permission.C2D_MESSAGE" />
 
     <application
-        android:name="com.example.candor.youthapp.YouthApp"
+        android:name="com.example.candor.youthapp.GENERAL.YouthApp"
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
@@ -43,7 +43,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.candor.youthapp.MainActivity"
+            android:name="com.example.candor.youthapp.GENERAL.MainActivity"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -56,7 +56,7 @@
             android:name="com.example.candor.youthapp.HOME.BLOG.CreateBlogActivity"
             android:label="@string/title_activity_create_blog"
             android:screenOrientation="portrait" />
-        <activity android:name="com.example.candor.youthapp.HOME.POST.CREATE.CreatePostActivity" />
+        <activity android:name="com.example.candor.youthapp.HOME.POST.CREATE_SHOW.CreatePostActivity" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
@@ -64,6 +64,7 @@
         <activity android:name="com.example.candor.youthapp.PROFILE.SettingsActivity" />
         <activity android:name="com.example.candor.youthapp.CHAT.ChatActivity" />
         <activity android:name="com.example.candor.youthapp.HOME.POST.LIKE.LikersActivity" />
+        <activity android:name="com.example.candor.youthapp.HOME.POST.CREATE_SHOW.ShowPostActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"

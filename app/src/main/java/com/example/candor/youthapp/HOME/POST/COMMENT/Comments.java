@@ -11,13 +11,35 @@ public class Comments {
     private String comment;
     private String uid;
     private String postID;
+    private String notificationID;
+    private String time_stamp;
 
     public Comments(){}
 
-    public Comments(String comment, String uid , String postID) {
+    public String getNotificationID() {
+        return notificationID;
+    }
+
+    public void setNotificationID(String notificationID) {
+        this.notificationID = notificationID;
+    }
+
+    public String getTime_stamp() {
+        return time_stamp;
+    }
+
+    public void setTime_stamp(String time_stamp) {
+        this.time_stamp = time_stamp;
+    }
+
+    public Comments(String comment, String uid , String postID , String notificationID , String time_stamp) {
         this.comment = comment;
         this.uid = uid;
         this.postID = postID;
+        this.notificationID  = notificationID;
+        this.time_stamp = time_stamp;
+
+
     }
 
 
