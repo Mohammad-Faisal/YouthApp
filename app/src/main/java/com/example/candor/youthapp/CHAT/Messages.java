@@ -35,34 +35,32 @@ public class Messages {
     public String getMessage() {
         return message;
     }
-
     public void setMessage(String message) {
         this.message = message;
     }
-
     public Boolean getSeen() {
         return seen;
     }
-
     public void setSeen(Boolean seen) {
         this.seen = seen;
     }
-
     public long getTime() {
         return time;
     }
-
     public void setTime(long time) {
         this.time = time;
     }
-
     public String getType() {
         return type;
     }
-
     public void setType(String type) {
         this.type = type;
     }
+
+
+     void balsal(){}
+
+
 
 
 }

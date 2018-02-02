@@ -197,7 +197,6 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                                     userViewHolder.postLikeButton.setImageResource(R.drawable.ic_love_empty);
                                 }
                                 else{
-
                                     String time_stamp = String.valueOf(new Date().getTime());
                                     // ------- BUILDING A NOTIFICATION FOR THIS EVENT -----//
                                     String likeNotificatoinPushID = mRootRef.child("notifications").child(post.getUid()).push().getKey();
