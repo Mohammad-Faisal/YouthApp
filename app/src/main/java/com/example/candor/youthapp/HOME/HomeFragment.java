@@ -53,12 +53,9 @@ public class HomeFragment extends Fragment {
         tabs.setupWithViewPager(viewPager);
 
         mHomeFragmentFloating = view.findViewById(R.id.home_fragment_floating);
-
         mHomeFragmentFloating.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
                 if(tab_position == 1 )
                 {
                     Intent blogIntent = new Intent(getActivity() , CreateBlogActivity.class);

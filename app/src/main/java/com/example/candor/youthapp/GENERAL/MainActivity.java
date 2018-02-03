@@ -12,9 +12,9 @@ import android.view.MenuItem;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import com.example.candor.youthapp.COMMUNICATE.CommunicationFragment;
 import com.example.candor.youthapp.HOME.HomeFragment;
 import com.example.candor.youthapp.NotificationFragment.NotificationFragment;
-import com.example.candor.youthapp.PROFILE.ProfileActivity;
 import com.example.candor.youthapp.PROFILE.ProfileFragment;
 import com.example.candor.youthapp.R;
 import com.firebase.ui.auth.AuthUI;
@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
     //------- FRAGMENTS ----//
     private HomeFragment mHomeFragment;
+    private CommunicationFragment mCommunicationFragment;
     private ProfileFragment mProfileFragment;
     private NotificationFragment mNotificationFragment;
 
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     setFragment(mHomeFragment);
                     return true;
                 case R.id.navigation_explore:
+                    setFragment(mCommunicationFragment);
                     return true;
                 case R.id.navigation_location:
                     return true;
@@ -115,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         setFragment(mHomeFragment);
         mProfileFragment = new ProfileFragment();
         mNotificationFragment = new NotificationFragment();
+        mCommunicationFragment = new CommunicationFragment();
 
         //-------- CHECKING AUTH STATE -------//
         mAuth = FirebaseAuth.getInstance();

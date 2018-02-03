@@ -352,7 +352,7 @@ ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifes
 	android:name
 		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:44:19-64
 activity#com.example.candor.youthapp.HOME.POST.CREATE_SHOW.ShowPostActivity
-ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:45:9-85
+ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:45:9-76
 	android:name
 		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:45:19-73
 uses-sdk

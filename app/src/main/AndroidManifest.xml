@@ -42,7 +42,7 @@
         <activity android:name=".PROFILE.SettingsActivity" />
         <activity android:name=".CHAT.ChatActivity" />
         <activity android:name=".HOME.POST.LIKE.LikersActivity" />
-        <activity android:name=".HOME.POST.CREATE_SHOW.ShowPostActivity"></activity>
+        <activity android:name=".HOME.POST.CREATE_SHOW.ShowPostActivity" />
     </application>
 
 </manifest>

@@ -23,4 +23,5 @@
     <string name="hours_ago">hours ago</string>
     <string name="yesterday">yesterday</string>
     <string name="days_ago">days ago</string>
+    <string name="title_activity_communication">CommunicationActivity</string>
 </resources>
