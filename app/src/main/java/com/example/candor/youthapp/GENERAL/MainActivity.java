@@ -40,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
     private static final int RC_SIGN_IN = 1;
 
 
+    public static String mUserID = "";
+    public static String mUserName = "";
+    public static String mUserThumbImage = "";
+
+
     //----------- FIREBASE -----//
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
@@ -51,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     //------------ VARIABLES ----------//
-    private String mUserID = "";
 
 
     //------- FRAGMENTS ----//

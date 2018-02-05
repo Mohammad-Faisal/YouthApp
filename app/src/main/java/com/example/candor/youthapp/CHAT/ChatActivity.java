@@ -18,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.candor.youthapp.R;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
@@ -64,7 +65,8 @@ public class ChatActivity extends AppCompatActivity {
     //variables
     private String mOtherUseID;
     private String mCurrentUserID;
-    private String mOtherUserName;
+    private String mOtherUserName , mCurrentUserName;
+    private String mOtherUserThumbImage , mCurrentUserThumbImage;
 
     //containers
     private RecyclerView mMessageList;
@@ -87,6 +89,7 @@ public class ChatActivity extends AppCompatActivity {
         //setting up variables
         mOtherUseID = getIntent().getStringExtra("userID");
         mOtherUserName = "default";
+        mCurrentUserName = "default";
 
         //firebase
         mUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -106,7 +109,7 @@ public class ChatActivity extends AppCompatActivity {
         mMessageList.hasFixedSize();
         mMessageList.setLayoutManager(mLinearLayout);
         mMessageList.setAdapter(mMessageAdapter);
-        loadMessages();
+
 
         //------------ END -------//
 
@@ -134,6 +137,7 @@ public class ChatActivity extends AppCompatActivity {
        // mAddContent = findViewById(R.id.chat_add_content);
         mEditMessage = findViewById(R.id.chat_write_message);
         mSwipeRefreshlayout = findViewById(R.id.swipe_message_layout);
+        loadMessages();
 
 
         //last seen feature add kora hoise
@@ -145,6 +149,7 @@ public class ChatActivity extends AppCompatActivity {
                 mOtherUserName = dataSnapshot.child("name").getValue().toString();
                 String online = dataSnapshot.child("online").getValue().toString();
                 String image_url = dataSnapshot.child("image").getValue().toString();
+                mOtherUserThumbImage = dataSnapshot.child("thumb_image").getValue().toString();
 
                 if(online.equals("true")){
                    // mLastSeen.setText("active now");
@@ -170,6 +175,8 @@ public class ChatActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 final String currentUserThumbImage = dataSnapshot.child("thumb_image").getValue().toString();
+                mCurrentUserName = dataSnapshot.child("name").getValue().toString();
+                mCurrentUserThumbImage = currentUserThumbImage;
 
                 Picasso.with(ChatActivity.this).load(currentUserThumbImage).networkPolicy(NetworkPolicy.OFFLINE)
                         .placeholder(R.drawable.ic_blank_profile).into(mImageIconTop, new Callback() {
@@ -192,21 +199,21 @@ public class ChatActivity extends AppCompatActivity {
         });
 
         //creating a new firebase entry for current chat if it doesnt exist or loading the previous ones
-        mRootRef.child("chat").addValueEventListener(new ValueEventListener() {
+        mRootRef.child("messages").child(mCurrentUserID).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if(dataSnapshot.hasChild(mOtherUseID)){
 
                 }
                 else{  //jehetu age chat hoynai tai amra eikhane ekta notun entry diye ditesi
-                    Map chatAddMap = new HashMap();
+                   /* Map chatAddMap = new HashMap();
+                    chatAddMap.put("message" , "");
                     chatAddMap.put("seen" , false);
                     chatAddMap.put("timestamp" , ServerValue.TIMESTAMP);
-
-
+                    chatAddMap.put("type" , "text");
                     Map chatUserMap = new HashMap();
-                    chatUserMap.put("chat/"+mCurrentUserID+"/"+mOtherUseID , chatAddMap);
-                    chatUserMap.put("chat/"+mOtherUseID+"/"+mCurrentUserID , chatAddMap);
+                    chatUserMap.put("messages/"+mCurrentUserID+"/"+mOtherUseID , chatAddMap);
+                    chatUserMap.put("messages/"+mOtherUseID+"/"+mCurrentUserID , chatAddMap);
 
                     mRootRef.updateChildren(chatUserMap, new DatabaseReference.CompletionListener() {
                         @Override
@@ -215,7 +222,13 @@ public class ChatActivity extends AppCompatActivity {
                                 Toast.makeText(ChatActivity.this, "there was an error "+ databaseError.toString(), Toast.LENGTH_SHORT).show();
                             }
                         }
-                    });
+                    });*/
+
+                    ChatBuddies mChatBuddiesCurrent = new ChatBuddies(mOtherUseID , mOtherUserName , mOtherUserThumbImage , "n" , "n" , "n" , 0);
+                    ChatBuddies mChatBuddiesOther = new ChatBuddies(mCurrentUserID , mCurrentUserName , mCurrentUserThumbImage , "n" , "n" , "n" , 0);
+                    mRootRef.child("chat_buddies").child(mCurrentUserID).child(mOtherUseID).setValue(mChatBuddiesCurrent);
+                    mRootRef.child("chat_buddies").child(mOtherUseID).child(mCurrentUserID).setValue(mChatBuddiesOther);
+
 
                 }
             }
@@ -304,7 +317,6 @@ public class ChatActivity extends AppCompatActivity {
                 mMessageList.scrollToPosition(messageList.size()-1); // ei line ta dile page e dhukei niche cole jabe
                 mSwipeRefreshlayout.setRefreshing(false);
             }
-
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
             }
@@ -342,7 +354,6 @@ public class ChatActivity extends AppCompatActivity {
             Map messageUserMap = new HashMap();
             messageUserMap.put(current_user_ref + "/" + pushID , newMessageMap);
             messageUserMap.put(other_user_ref+"/"+pushID, newMessageMap);
-
             mRootRef.updateChildren(messageUserMap, new DatabaseReference.CompletionListener() {
                 @Override
                 public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
@@ -352,6 +363,51 @@ public class ChatActivity extends AppCompatActivity {
                 }
             });
             mEditMessage.setText("");
+
+
+
+           /* private String user_id;
+            private String thumb_image_url;
+            private String user_name;
+            private String last_message;
+            private String seen_status;
+            private String last_message_from;
+            private long time_stamp;*/
+
+            Map newChatBuddiesMap = new HashMap();
+            newChatBuddiesMap.put("user_id" , mOtherUseID);
+            newChatBuddiesMap.put("thumb_image_url" , mOtherUserThumbImage);
+            newChatBuddiesMap.put("user_name" , mOtherUserName);
+            newChatBuddiesMap.put("last_message" , message);
+            newChatBuddiesMap.put("seen_status" , "n");
+            newChatBuddiesMap.put("last_message_from" , mCurrentUserID);
+            newChatBuddiesMap.put("time_stamp" , ServerValue.TIMESTAMP);
+
+            Map newChatBuddiesMap1 = new HashMap();
+            newChatBuddiesMap1.put("user_id" , mCurrentUserID);
+            newChatBuddiesMap1.put("thumb_image_url" , mCurrentUserThumbImage);
+            newChatBuddiesMap1.put("user_name" , mCurrentUserName);
+            newChatBuddiesMap1.put("last_message" , message);
+            newChatBuddiesMap1.put("seen_status" , "n");
+            newChatBuddiesMap1.put("last_message_from" , mCurrentUserID);
+            newChatBuddiesMap1.put("time_stamp" , ServerValue.TIMESTAMP);
+
+
+            Map ChatBuddiesMap = new HashMap();
+            ChatBuddiesMap.put("chat_buddies/"+mCurrentUserID+"/"+mOtherUseID , newChatBuddiesMap);
+            ChatBuddiesMap.put("chat_buddies/"+mOtherUseID+"/"+mCurrentUserID , newChatBuddiesMap1);
+            mRootRef.updateChildren(ChatBuddiesMap, new DatabaseReference.CompletionListener() {
+                @Override
+                public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
+                    if(databaseError!=null){
+                        Log.d( TAG , databaseError.getMessage().toString());
+                    }
+                }
+            });
+
+
+
+
         }
 
     }

@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.candor.youthapp.CHAT.ChatActivity;
+import com.example.candor.youthapp.GENERAL.MainActivity;
 import com.example.candor.youthapp.NotificationFragment.Notifications;
 import com.example.candor.youthapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -68,6 +69,8 @@ public class ProfileActivity extends AppCompatActivity {
     private String mCurrentUserID;
     int active = 0;
     int followingState = 0;  //0 mane ami follow kortesina 1 mane follow kortesi
+    private String mUserName , mCurrentUserName;
+    private String mThumbImage , mCurrentUserThumbImage;
 
 
     //firebase
@@ -164,7 +167,6 @@ public class ProfileActivity extends AppCompatActivity {
 
             }
         });
-
         mProfileFollowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -187,6 +189,8 @@ public class ProfileActivity extends AppCompatActivity {
                     followingData.put("id" , mCurrentUserID);
                     followingData.put("date" , formattedDate);
                     followingData.put("notificationID", followNotificatoinPushID);
+                    followingData.put("name" , mCurrentUserName);
+                    followingData.put("thumb_image" , mCurrentUserThumbImage);
                     mRootRef.child("followings").child(mUserID).child(mCurrentUserID).setValue(followingData);
 
                     //------- SETTING THE INFORMATION THAT NOW I AM FA FOLLOWER OF THIS ID ------//
@@ -194,6 +198,8 @@ public class ProfileActivity extends AppCompatActivity {
                     followerData.put("id" , mUserID);
                     followerData.put("date" , formattedDate);
                     followerData.put("notificationID", followNotificatoinPushID);
+                    followerData.put("name" , mUserName);
+                    followerData.put("thumb_image" , MainActivity.mUserThumbImage);
                     mRootRef.child("followers").child(mCurrentUserID).child(mUserID).setValue(followerData);
 
                     mProfileFollowButton.setText("following");
@@ -211,7 +217,6 @@ public class ProfileActivity extends AppCompatActivity {
                                  mRootRef.child("followings").child(mUserID).child(mCurrentUserID).removeValue();
                                  mRootRef.child("followers").child(mCurrentUserID).child(mUserID).removeValue();
                                  mProfileFollowButton.setText("follow");
-
                              }
                          }
                          @Override
@@ -230,6 +235,8 @@ public class ProfileActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 String name = dataSnapshot.child("name").getValue().toString();
+                mCurrentUserName = name;
+                mCurrentUserThumbImage = dataSnapshot.child("thumb_image").getValue().toString();
                 String phone_number = dataSnapshot.child("phone_number").getValue().toString();
                 String email  =  dataSnapshot.child("email").getValue().toString();
                 String date_of_birth  =  dataSnapshot.child("date_of_birth").getValue().toString();
@@ -282,7 +289,6 @@ public class ProfileActivity extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {
             }
         });
-
     }
 
 

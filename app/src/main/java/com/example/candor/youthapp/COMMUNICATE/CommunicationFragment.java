@@ -13,16 +13,25 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.candor.youthapp.COMMUNICATE.CHATS.ChatsFragment;
 import com.example.candor.youthapp.COMMUNICATE.LEADERS.LeadersFragment;
 import com.example.candor.youthapp.COMMUNICATE.MEETINGS.MeetingFragment;
+import com.example.candor.youthapp.GENERAL.MainActivity;
 import com.example.candor.youthapp.HOME.BLOG.BlogFragment;
 import com.example.candor.youthapp.HOME.BLOG.CreateBlogActivity;
 import com.example.candor.youthapp.HOME.POST.CREATE_SHOW.CreatePostActivity;
 import com.example.candor.youthapp.HOME.POST.LOAD.NewsFeedFragment;
 import com.example.candor.youthapp.HOME.RankingFragment;
 import com.example.candor.youthapp.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,6 +80,26 @@ public class CommunicationFragment extends Fragment {
         final TabLayout tabs = view.findViewById(R.id.result_tabs);
         tabs.setupWithViewPager(viewPager);
 
+        String mUserID = MainActivity.mUserID;
+        DatabaseReference p = FirebaseDatabase.getInstance().getReference().child("users").child(mUserID);
+        p.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if(dataSnapshot!=null){
+                    MainActivity.mUserName = dataSnapshot.child("name").getValue().toString();
+                    MainActivity.mUserThumbImage = dataSnapshot.child("thumb_image").getValue().toString();
+                }else{
+                    Toast.makeText(getContext(), "baler matha !", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
         mCommunicationFragmentFloating = view.findViewById(R.id.communication_fragment_floating);
         mCommunicationFragmentFloating.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,11 +147,6 @@ public class CommunicationFragment extends Fragment {
         });
         return  view;
     }
-
-
-
-
-
 
 
     // ---------- ADDING FRAGMENTS --//

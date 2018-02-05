@@ -7,8 +7,8 @@ package com.example.candor.youthapp.CHAT;
 public class Messages {
 
     private String message , type ;
-     private Boolean seen;
-     private long  time;
+    private Boolean seen;
+    private long  time;
 
     public String getFrom() {
         return from;
@@ -25,7 +25,6 @@ public class Messages {
         this.seen = seen;
         this.time = time;
         this.type = type;
-
     }
 
     public Messages(){

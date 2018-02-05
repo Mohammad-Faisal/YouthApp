@@ -48,6 +48,7 @@ public class HomeFragment extends Fragment {
         // Setting ViewPager for each Tabs
         ViewPager viewPager = view.findViewById(R.id.viewpager);
         setupViewPager(viewPager);
+        viewPager.setOffscreenPageLimit(2);
         // Set Tabs inside Toolbar
         final TabLayout tabs = view.findViewById(R.id.result_tabs);
         tabs.setupWithViewPager(viewPager);
@@ -93,7 +94,6 @@ public class HomeFragment extends Fragment {
 
             }
         });
-
         return view;
     }
 
