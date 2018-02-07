@@ -154,10 +154,11 @@ public class ShowPostActivity extends AppCompatActivity {
 
                         // ------- BUILDING A NOTIFICATION FOR THIS EVENT -----//
                         String commentNotificatoinPushID = mRootRef.child("notifications").child(post.getUid()).push().getKey();
-                        Notifications pushNoti = new Notifications( "comment" ,mUserID , postID , ServerValue.TIMESTAMP.toString(),"n"  );
+                        String time_stamp = String.valueOf(new Date().getTime());
+                        Notifications pushNoti = new Notifications( "comment" ,mUserID , postID , time_stamp,"n"  );
                         mRootRef.child("notifications").child(post.getUid()).child(commentNotificatoinPushID).setValue(pushNoti);
 
-                        String time_stamp = String.valueOf(new Date().getTime());
+
                         Comments  comment =  new Comments(mSHowPostCreateComment.getText().toString() , mUserID , postID  , commentNotificatoinPushID  , time_stamp);
                         mSHowPostCreateComment.setText("");
                         mRootRef.child("comments").child(postID).push().setValue(comment).addOnSuccessListener(new OnSuccessListener<Void>() {

@@ -43,6 +43,8 @@
         <activity android:name=".CHAT.ChatActivity" />
         <activity android:name=".HOME.POST.LIKE.LikersActivity" />
         <activity android:name=".HOME.POST.CREATE_SHOW.ShowPostActivity" />
+        <activity android:name=".COMMUNICATE.MEETINGS.CreateMeetingActivity" />
+        <activity android:name=".COMMUNICATE.MEETINGS.InvitePeopleToMeetingActivity"></activity>
     </application>
 
 </manifest>

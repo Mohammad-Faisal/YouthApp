@@ -3,6 +3,7 @@ package com.example.candor.youthapp.COMMUNICATE;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 
 import com.example.candor.youthapp.COMMUNICATE.CHATS.ChatsFragment;
 import com.example.candor.youthapp.COMMUNICATE.LEADERS.LeadersFragment;
+import com.example.candor.youthapp.COMMUNICATE.MEETINGS.CreateMeetingActivity;
 import com.example.candor.youthapp.COMMUNICATE.MEETINGS.MeetingFragment;
 import com.example.candor.youthapp.GENERAL.MainActivity;
 import com.example.candor.youthapp.HOME.BLOG.BlogFragment;
@@ -68,14 +70,11 @@ public class CommunicationFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_communication, container, false);
 
 
-
-
-
-
         // Setting ViewPager for each Tabs
         ViewPager viewPager = view.findViewById(R.id.viewpager);
         setupViewPager(viewPager);
         viewPager.setCurrentItem(1);
+        viewPager.setOffscreenPageLimit(2);
         // Set Tabs inside Toolbar
         final TabLayout tabs = view.findViewById(R.id.result_tabs);
         tabs.setupWithViewPager(viewPager);
@@ -109,10 +108,10 @@ public class CommunicationFragment extends Fragment {
                     Intent blogIntent = new Intent(getActivity() , CreateBlogActivity.class);
                     startActivity(blogIntent);
                 }
-                else if(tab_position==1)
+                else if(tab_position==2)
                 {
-                    Intent blogIntent = new Intent(getActivity() , CreatePostActivity.class);
-                    startActivity(blogIntent);
+                    Intent createMeetingIntent = new Intent(getActivity() , CreateMeetingActivity.class);
+                    startActivity(createMeetingIntent);
                 }
                 else
                 {
@@ -120,6 +119,9 @@ public class CommunicationFragment extends Fragment {
                 }
             }
         });
+
+
+
 
         tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

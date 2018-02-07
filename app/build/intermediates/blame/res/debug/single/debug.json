@@ -2336,6 +2336,10 @@
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.0.4.aar\\50027c10c1c476529a45863ea862dc30\\res\\drawable-xhdpi-v4\\common_full_open_on_phone.png"
     },
     {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_shape_1.xml.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable\\button_shape_1.xml"
+    },
+    {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
         "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
@@ -4504,6 +4508,10 @@
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_13_light.png"
     },
     {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_invite_to_meeting_vertical.xml.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\layout\\invite_to_meeting_vertical.xml"
+    },
+    {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_20_dark.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_20_dark.png"
     },
@@ -4530,6 +4538,10 @@
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mr_media_pause_light.xml.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable\\mr_media_pause_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_invite_people_to_meeting.xml.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\layout\\activity_invite_people_to_meeting.xml"
     },
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_cast_ic_stop_circle_filled_grey600.png.flat",
@@ -4666,6 +4678,10 @@
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_04_light.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_04_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_create_meeting.xml.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\layout\\activity_create_meeting.xml"
     },
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_layout.xml.flat",
