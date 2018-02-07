@@ -67,6 +67,7 @@
         <activity android:name="com.example.candor.youthapp.HOME.POST.CREATE_SHOW.ShowPostActivity" />
         <activity android:name="com.example.candor.youthapp.COMMUNICATE.MEETINGS.CreateMeetingActivity" />
         <activity android:name="com.example.candor.youthapp.COMMUNICATE.MEETINGS.InvitePeopleToMeetingActivity" />
+        <activity android:name="com.example.candor.youthapp.COMMUNICATE.MEETINGS.MeetingActivity" />
 
         <meta-data
             android:name="com.google.android.gms.version"

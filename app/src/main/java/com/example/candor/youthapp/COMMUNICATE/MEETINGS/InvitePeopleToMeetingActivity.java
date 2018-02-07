@@ -18,6 +18,8 @@ import com.example.candor.youthapp.CHAT.ChatBuddies;
 import com.example.candor.youthapp.COMMUNICATE.CHATS.Actives;
 import com.example.candor.youthapp.COMMUNICATE.CHATS.ChatsFragment;
 import com.example.candor.youthapp.GENERAL.GetTimeAgo;
+import com.example.candor.youthapp.GENERAL.MainActivity;
+import com.example.candor.youthapp.NotificationFragment.Notifications;
 import com.example.candor.youthapp.PROFILE.ProfileActivity;
 import com.example.candor.youthapp.PROFILE.Users;
 import com.example.candor.youthapp.R;
@@ -27,10 +29,12 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ServerValue;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -38,6 +42,11 @@ import java.util.Map;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class InvitePeopleToMeetingActivity extends AppCompatActivity {
+
+
+
+    // nijeke nije meeting e invite kora jay eita ekta somossa
+    //ekbar invite korle arekbar je invite kora jabena eitar kaj korte hobe
 
     //----------- VARIABLES ----------//
     private String mMeetingID;
@@ -66,6 +75,7 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_invite_people_to_meeting);
+
         mMeetingRoom = (MeetingRooms) getIntent().getSerializableExtra("meetingID");
         mMeetingID = mMeetingRoom.getMeeting_id();
 
@@ -82,6 +92,16 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
         horizontal_recycler_view.setHasFixedSize(true);
         horizontal_recycler_view.setLayoutManager(new LinearLayoutManager(InvitePeopleToMeetingActivity.this));
 
+        Button goButton = findViewById(R.id.invite_people_to_meeting_go_button);
+        goButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent MeetingIntent = new Intent(InvitePeopleToMeetingActivity.this , MeetingActivity.class);
+                MeetingIntent.putExtra("meetingID" , mMeetingID);
+                startActivity(MeetingIntent);
+            }
+        });
+
     }
 
 
@@ -96,7 +116,8 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
                 mUsersDatabase
         ) {
             @Override
-            protected void populateViewHolder(final UsersViewHolder viewHolder, Users model, final int position) {
+            protected void populateViewHolder(final UsersViewHolder viewHolder, final Users model, final int position) {
+
 
 
                 String userName = model.getName();
@@ -105,25 +126,50 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
                 final String itemUserID = model.getId();
 
 
+                //setting detaiuls
                 viewHolder.setName(userName);
                 viewHolder.setStatus(status);
                 viewHolder.setImage(thumbImageUrl,InvitePeopleToMeetingActivity.this);
+
+                //--------- WHEN I INVITE SOMEONE TO MEETING THEN HE IS ADDED AND SOME THINGS ARE DONE -//
                 viewHolder.mInviteButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
 
-                        Map inviteMap = new HashMap();
-                        inviteMap.put("person_meeting/"+itemUserID+"/"+mMeetingID , mMeetingRoom);
-                        inviteMap.put("meeting_person/"+mMeetingID+"/"+itemUserID , mMeetingRoom);
-                        number_of_person = number_of_person +1;
-                        String t = String.valueOf(number_of_person);
-                        inviteMap.put("meetings/"+mMeetingID+"/number_of_person" , t );
-                        mRootRef.updateChildren(inviteMap, new DatabaseReference.CompletionListener() {
-                            @Override
-                            public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
+                        if(viewHolder.mInviteButton.getText().toString().equals("invite")){
+                            Map inviteMap = new HashMap();
+                            number_of_person = number_of_person +1;
+                            String time_stamp = String.valueOf(new Date().getTime());
+                            Notifications notifications = new Notifications("invitation" , MainActivity.mUserID, mMeetingID ,time_stamp , "n");
+                            String t = String.valueOf(number_of_person);
+                            inviteMap.put("person_meeting/"+itemUserID+"/"+mMeetingID , mMeetingRoom);
+                            inviteMap.put("meeting_person/"+mMeetingID+"/"+itemUserID , model);
+                            inviteMap.put("meetings/"+mMeetingID+"/number_of_person" , t );
+                            inviteMap.put("notifications/"+itemUserID+"/"+mMeetingID , notifications);
+                            mRootRef.updateChildren(inviteMap, new DatabaseReference.CompletionListener() {
+                                @Override
+                                public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
+                                    viewHolder.mInviteButton.setText("invited");
+                                }
+                            });
+                        }else{
+                            Map inviteMap = new HashMap();
+                            inviteMap.put("person_meeting/"+itemUserID+"/"+mMeetingID , null);
+                            inviteMap.put("meeting_person/"+mMeetingID+"/"+itemUserID , null);
+                            number_of_person = number_of_person -1;
+                            String t = String.valueOf(number_of_person);
+                            inviteMap.put("meetings/"+mMeetingID+"/number_of_person" , t );
+                            inviteMap.put("notifications/"+itemUserID+"/"+mMeetingID , null);
+                            mRootRef.updateChildren(inviteMap, new DatabaseReference.CompletionListener() {
+                                @Override
+                                public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
+                                    viewHolder.mInviteButton.setText("invite");
+                                }
+                            });
 
-                            }
-                        });
+
+                        }
+
                     }
                 });
 

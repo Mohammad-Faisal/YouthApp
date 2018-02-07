@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.candor.youthapp.COMMUNICATE.MEETINGS.MeetingActivity;
+import com.example.candor.youthapp.COMMUNICATE.MEETINGS.MeetingRooms;
 import com.example.candor.youthapp.GENERAL.GetTimeAgo;
 import com.example.candor.youthapp.HOME.POST.CREATE_SHOW.ShowPostActivity;
 import com.example.candor.youthapp.PROFILE.ProfileActivity;
@@ -129,7 +131,6 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
 
                     holder.notificationText.setText(Html.fromHtml(sourceString));
                     holder.setImage(imageURL , context , R.drawable.ic_blank_profile);
-
                     ////SETTING TIME AGO OF THE NOTIFICATION -//
                     GetTimeAgo ob = new GetTimeAgo();
                     long time = Long.parseLong(online);
@@ -157,9 +158,42 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
                     context.startActivity(showPostIntent);
                 }
             });
-        }else if(type.equals("like")){  ///add something
-        }
+        }else if(type.equals("invitation")){  ///add something
+            final String userID = notiItem.getUser_id();
+            final String online = notiItem.getTime_stamp();
+            final String meetingID = notiItem.getContent_id();
 
+
+            mRootRef.child("users").child(userID).addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    final String imageURL = dataSnapshot.child("thumb_image").getValue().toString();
+                    final String userName = dataSnapshot.child("name").getValue().toString();
+                    String sourceString = "default notification";
+                    sourceString =  "<b>" + userName + "<b>" + "  has invited you to a group meeting";
+                    holder.notificationText.setText(Html.fromHtml(sourceString));
+                    holder.setImage(imageURL , context , R.drawable.ic_blank_profile);
+                    ////SETTING TIME AGO OF THE NOTIFICATION -//
+                    GetTimeAgo ob = new GetTimeAgo();
+                    long time = Long.parseLong(online);
+                    String time_ago = ob.getTimeAgo(time ,context);
+                    holder.notificationTime.setText( time_ago);
+                }
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
+
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent showPostIntent = new Intent(context , MeetingActivity.class);
+                    showPostIntent.putExtra("meetingID" , meetingID);
+                    context.startActivity(showPostIntent);
+                }
+            });
+        }
     }
 
 

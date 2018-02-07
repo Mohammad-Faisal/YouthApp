@@ -386,7 +386,7 @@ public class ChatActivity extends AppCompatActivity {
             Map newChatBuddiesMap1 = new HashMap();
             newChatBuddiesMap1.put("user_id" , mCurrentUserID);
             newChatBuddiesMap1.put("thumb_image_url" , mCurrentUserThumbImage);
-            newChatBuddiesMap1.put("user_name" , mCurrentUserName);
+            newChatBuddiesMap1.put("user_name" , mOtherUserName);
             newChatBuddiesMap1.put("last_message" , message);
             newChatBuddiesMap1.put("seen_status" , "n");
             newChatBuddiesMap1.put("last_message_from" , mCurrentUserID);
@@ -404,10 +404,6 @@ public class ChatActivity extends AppCompatActivity {
                     }
                 }
             });
-
-
-
-
         }
 
     }

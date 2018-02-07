@@ -26,8 +26,6 @@ public class MeetingFragment extends Fragment {
 
 
 
-
-
         return view;
     }
 

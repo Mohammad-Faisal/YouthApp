@@ -32,7 +32,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 >
-
             </android.support.v7.widget.RecyclerView>
 
         </android.support.v4.widget.SwipeRefreshLayout>
@@ -60,12 +59,4 @@
                 />
         </LinearLayout>
     </LinearLayout>
-
-
-
-
-
-
-
-
 </RelativeLayout>

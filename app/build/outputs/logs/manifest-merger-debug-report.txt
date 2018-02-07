@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-51:12
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\bdc5cdcc464a63c2dd0965d8038b7886\AndroidManifest.xml:2:1-19:12
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\bfa4ef4710b62b26a173d656a87538cb\AndroidManifest.xml:2:1-6:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.5.1.aar\af52148421079c402bdbaa1a093a62c6\AndroidManifest.xml:2:1-12:12
@@ -84,20 +84,20 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Mohammad Faisal
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\ca0065d44245b999636edbe07701cf2e\AndroidManifest.xml:17:1-30:12
 MERGED from [android.arch.core:runtime:1.0.0-alpha8] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0-alpha8.aar\2d21b9ca7cb970736fc001d8528af0ac\AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\5696dcf9f3de5a3add73effefcfc2f38\AndroidManifest.xml:17:1-28:12
-INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-51:12
+INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-51:12
 	package
 		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-51:12
 		INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-51:12
 		INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -152,7 +152,7 @@ MERGED from [com.google.android.gms:play-services-ads-lite:11.0.4] C:\Users\Moha
 	android:name
 		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:13:22-64
 application
-ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:15:5-48:19
+ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:15:5-49:19
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\bdc5cdcc464a63c2dd0965d8038b7886\AndroidManifest.xml:13:5-17:19
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\bdc5cdcc464a63c2dd0965d8038b7886\AndroidManifest.xml:13:5-17:19
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\bfa4ef4710b62b26a173d656a87538cb\AndroidManifest.xml:5:5-20
@@ -360,9 +360,13 @@ ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifes
 	android:name
 		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:46:19-77
 activity#com.example.candor.youthapp.COMMUNICATE.MEETINGS.InvitePeopleToMeetingActivity
-ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:47:9-97
+ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:47:9-88
 	android:name
 		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:47:19-85
+activity#com.example.candor.youthapp.COMMUNICATE.MEETINGS.MeetingActivity
+ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:48:9-83
+	android:name
+		ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:48:19-71
 uses-sdk
 INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml
