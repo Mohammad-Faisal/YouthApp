@@ -1,10 +1,12 @@
 package com.example.candor.youthapp.COMMUNICATE.MEETINGS;
 
+import java.io.Serializable;
+
 /**
  * Created by Mohammad Faisal on 2/7/2018.
  */
 
-public class MeetingRooms {
+public class MeetingRooms implements Serializable {
     private String title;
     private String type;
     private String details;

@@ -31,7 +31,9 @@ import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -39,6 +41,8 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
 
     //----------- VARIABLES ----------//
     private String mMeetingID;
+    private MeetingRooms mMeetingRoom;
+    int number_of_person = 0;
 
 
     // ------- WIDGETS -/
@@ -54,7 +58,7 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
 
 
     //-------FIREBASE -//
-    DatabaseReference mChatsDatabase, mFollowingsDatabase, mUsersDatabase;
+    DatabaseReference mChatsDatabase, mFollowingsDatabase, mUsersDatabase , mRootRef;
 
 
 
@@ -62,11 +66,11 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_invite_people_to_meeting);
-        mMeetingID = getIntent().getStringExtra("meetingID");
-
-
+        mMeetingRoom = (MeetingRooms) getIntent().getSerializableExtra("meetingID");
+        mMeetingID = mMeetingRoom.getMeeting_id();
 
         mUsersDatabase = FirebaseDatabase.getInstance().getReference().child("users");
+        mRootRef = FirebaseDatabase.getInstance().getReference();
 
 
         vertical_recycler_view =findViewById(R.id.invite_people_to_meeting_vertical_recycler_view);
@@ -98,25 +102,28 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
                 String userName = model.getName();
                 String status = model.getBio();
                 String thumbImageUrl = model.getThumb_image();
+                final String itemUserID = model.getId();
+
 
                 viewHolder.setName(userName);
                 viewHolder.setStatus(status);
                 viewHolder.setImage(thumbImageUrl,InvitePeopleToMeetingActivity.this);
-
-
-
                 viewHolder.mInviteButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
 
-                        // meeting_person update hbe
-                        // person_meeting update hobe
-                        // new group chat create hobe
-                        // //user ke noti pathate hobe
-                        //meetings e number of person update korte hobe
+                        Map inviteMap = new HashMap();
+                        inviteMap.put("person_meeting/"+itemUserID+"/"+mMeetingID , mMeetingRoom);
+                        inviteMap.put("meeting_person/"+mMeetingID+"/"+itemUserID , mMeetingRoom);
+                        number_of_person = number_of_person +1;
+                        String t = String.valueOf(number_of_person);
+                        inviteMap.put("meetings/"+mMeetingID+"/number_of_person" , t );
+                        mRootRef.updateChildren(inviteMap, new DatabaseReference.CompletionListener() {
+                            @Override
+                            public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
 
-
-
+                            }
+                        });
                     }
                 });
 

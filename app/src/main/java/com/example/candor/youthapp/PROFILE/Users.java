@@ -6,13 +6,10 @@ package com.example.candor.youthapp.PROFILE;
 
 public class Users {
     private String name;
+    private String id;
     private String location;
     private String image;
     private  String thumb_image;
-
-    public Users() {
-    }
-
     private String bio;
     private String blood_group;
     private String date_of_birth;
@@ -20,6 +17,11 @@ public class Users {
     private String email;
     private  String phone_number;
     private  long online;
+
+
+    public Users() {
+    }
+
 
     public String getName() {
         return name;
@@ -101,6 +103,14 @@ public class Users {
         this.phone_number = phone_number;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public long getOnline() {
         return online;
     }
@@ -109,9 +119,9 @@ public class Users {
         this.online = online;
     }
 
-    public Users(String name, String location, String image, String thumb_image, String bio, String blood_group, String date_of_birth, String device_id, String email, String phone_number, long online) {
-
+    public Users(String name, String id, String location, String image, String thumb_image, String bio, String blood_group, String date_of_birth, String device_id, String email, String phone_number, long online) {
         this.name = name;
+        this.id = id;
         this.location = location;
         this.image = image;
         this.thumb_image = thumb_image;

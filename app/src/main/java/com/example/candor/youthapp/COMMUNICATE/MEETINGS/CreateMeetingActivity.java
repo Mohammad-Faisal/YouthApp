@@ -94,14 +94,14 @@ public class CreateMeetingActivity extends AppCompatActivity {
                 tag = mTags.getText().toString();
                 mMeetingImageUrl = image_download_url;
 
-                MeetingRooms meetingRooms = new MeetingRooms(title , type , details , tag ,moderator , mUserID , mMeetingId , "0" , mMeetingImageUrl);
+                final MeetingRooms meetingRooms = new MeetingRooms(title , type , details , tag ,moderator , mUserID , mMeetingId , "0" , mMeetingImageUrl);
 
 
                 mMeetingsRef.child(mMeetingId).setValue(meetingRooms).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Intent invtePeopleIntent = new Intent(CreateMeetingActivity.this , InvitePeopleToMeetingActivity.class );
-                        invtePeopleIntent.putExtra("meetingID" , mMeetingId);
+                        invtePeopleIntent.putExtra("meetingID" , meetingRooms);
                         startActivity(invtePeopleIntent);
                         finish();
                     }

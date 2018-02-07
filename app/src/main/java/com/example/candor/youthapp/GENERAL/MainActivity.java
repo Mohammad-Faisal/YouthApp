@@ -183,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 HashMap<String  , String> hashMap = new HashMap<>();
                                 hashMap.put("name"  , "Name");
+                                hashMap.put("id", mUserID);
                                 hashMap.put("image" , "default");
                                 hashMap.put("thumb_image" , "default");
                                 hashMap.put("device_id" , deviceTokenID);
