@@ -90,6 +90,7 @@
                 android:orientation="vertical"
                 >
 
+
                 <ImageButton
                     android:id="@+id/post_like_button"
                     android:layout_width="wrap_content"
@@ -97,6 +98,8 @@
                     android:layout_marginRight="2dp"
                     android:background="@android:color/transparent"
                     android:src="@drawable/ic_love_empty" />
+
+
                 <TextView
                     android:id="@+id/post_like_number"
                     android:layout_width="match_parent"

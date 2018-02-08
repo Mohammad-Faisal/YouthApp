@@ -426,7 +426,6 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         public CircleImageView postUserImage;
         public ImageButton postLikeButton;
         public ImageButton postCommentButton;
-
         public UserViewHolder(View view) {
             super(view);
 

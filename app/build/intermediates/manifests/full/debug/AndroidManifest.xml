@@ -11,18 +11,46 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.example.candor.youthapp.MAP.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.candor.youthapp.MAP.permission.MAPS_RECEIVE" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
+    <!-- for android -->
+    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+    <!-- for Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
@@ -60,18 +88,49 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name="com.example.candor.youthapp.PROFILE.ProfileActivity" />
-        <activity android:name="com.example.candor.youthapp.PROFILE.SettingsActivity" />
-        <activity android:name="com.example.candor.youthapp.CHAT.ChatActivity" />
-        <activity android:name="com.example.candor.youthapp.HOME.POST.LIKE.LikersActivity" />
-        <activity android:name="com.example.candor.youthapp.HOME.POST.CREATE_SHOW.ShowPostActivity" />
-        <activity android:name="com.example.candor.youthapp.COMMUNICATE.MEETINGS.CreateMeetingActivity" />
-        <activity android:name="com.example.candor.youthapp.COMMUNICATE.MEETINGS.InvitePeopleToMeetingActivity" />
-        <activity android:name="com.example.candor.youthapp.COMMUNICATE.MEETINGS.MeetingActivity" />
+        <activity
+            android:name="com.example.candor.youthapp.PROFILE.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.candor.youthapp.PROFILE.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.candor.youthapp.CHAT.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.candor.youthapp.HOME.POST.LIKE.LikersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.candor.youthapp.HOME.POST.CREATE_SHOW.ShowPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.candor.youthapp.COMMUNICATE.MEETINGS.CreateMeetingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.candor.youthapp.COMMUNICATE.MEETINGS.InvitePeopleToMeetingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.candor.youthapp.COMMUNICATE.MEETINGS.MeetingActivity"
+            android:screenOrientation="portrait" />
 
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAUG09fpWE8poCe3Lmj0-yQ1NB8fiI9_bU" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.example.candor.youthapp.MAP.MapsActivity"
+            android:label="@string/title_activity_maps" />
 
         <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
 

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,6 +42,7 @@ public class CreateMeetingActivity extends AppCompatActivity {
     private Button mCreateChatRoomButton;
     private ImageView mCreateMeetingImage;
     private String image_download_url;
+    ProgressBar progressBar;
 
     //------------FIREBASE -----//
     DatabaseReference mRootRef , mMeetingsRef , mNotificationsRef ;
@@ -61,6 +63,8 @@ public class CreateMeetingActivity extends AppCompatActivity {
         mTags = findViewById(R.id.create_meeting_tags_text);
         mCreateChatRoomButton = findViewById(R.id.create_meeting_button);
         mCreateMeetingImage = findViewById(R.id.create_meeting_image);
+        progressBar = findViewById(R.id.progress_bar);
+        progressBar.setVisibility(View.GONE);
 
         //--VARIABLES---//
         mUserID = MainActivity.mUserID;
@@ -123,6 +127,7 @@ public class CreateMeetingActivity extends AppCompatActivity {
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
 
 
+            progressBar.setVisibility(View.VISIBLE);
 
             CropImage.ActivityResult result = CropImage.getActivityResult(data);
             if (resultCode == RESULT_OK) {
@@ -152,6 +157,7 @@ public class CreateMeetingActivity extends AppCompatActivity {
                             Uri downloadUrlImage = task.getResult().getDownloadUrl();
                             final String downLoadUriStringImage  = downloadUrlImage.toString();
                             image_download_url = downLoadUriStringImage;
+                            progressBar.setVisibility(View.GONE);
                         }
                         else{
                             Toast.makeText(CreateMeetingActivity.this, "Error !", Toast.LENGTH_SHORT).show();

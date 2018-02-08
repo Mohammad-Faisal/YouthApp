@@ -10,6 +10,7 @@ package com.example.candor.youthapp;
 public final class Manifest {
   public static final class permission {
     public static final String C2D_MESSAGE="com.example.candor.youthapp.permission.C2D_MESSAGE";
+    public static final String MAPS_RECEIVE="com.example.candor.youthapp.MAP.permission.MAPS_RECEIVE";
   }
 
 }

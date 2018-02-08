@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.candor.youthapp.COMMUNICATE.CommunicationFragment;
 import com.example.candor.youthapp.HOME.HomeFragment;
+import com.example.candor.youthapp.MAP.MapsActivity;
 import com.example.candor.youthapp.NotificationFragment.NotificationFragment;
 import com.example.candor.youthapp.PROFILE.ProfileFragment;
 import com.example.candor.youthapp.R;
@@ -33,6 +34,8 @@ import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.util.Arrays;
 import java.util.HashMap;
+
+import me.leolin.shortcutbadger.ShortcutBadger;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -78,8 +81,11 @@ public class MainActivity extends AppCompatActivity {
                     setFragment(mCommunicationFragment);
                     return true;
                 case R.id.navigation_location:
+                    Intent mapsIntent  = new Intent(MainActivity.this , MapsActivity.class);
+                    startActivity(mapsIntent);
                     return true;
                 case R.id.navigation_notifications:
+                    ShortcutBadger.removeCount(MainActivity.this);
                     setFragment(mNotificationFragment);
                     return true;
                 case R.id.navigation_profile:
@@ -145,7 +151,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         };
-
+        int badgeCount = 1;
+        ShortcutBadger.applyCount(MainActivity.this, badgeCount); //for 1.1.4+
+        //ShortcutBadger.with(getApplicationContext()).count(badgeCount);
     }
 
 
@@ -155,7 +163,6 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == RC_SIGN_IN) {
             IdpResponse response = IdpResponse.fromResultIntent(data);
             if(response==null) Log.d(TAG, "onActivityResult: MainActivity");
-
 
             // Successfully signed in
             if (resultCode == RESULT_OK && response!=null) {

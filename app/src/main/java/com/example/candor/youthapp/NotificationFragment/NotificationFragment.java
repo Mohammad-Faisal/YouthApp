@@ -27,7 +27,9 @@ public class NotificationFragment extends Fragment {
 
 
     //for recyclcer view
+
     private List<Notifications> notifications;
+    private List<String> notificationIDs;
     private NotificationAdapter notificationAdapter;
 
     // --- FIREBASE ----//
@@ -47,10 +49,11 @@ public class NotificationFragment extends Fragment {
 
         //setting RecyclerView
         notifications = new ArrayList<>();
+        notificationIDs = new ArrayList<>();
         RecyclerView recyclerView = view.findViewById(R.id.notification_recycler);
         recyclerView.hasFixedSize();
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        notificationAdapter = new NotificationAdapter(notifications, getContext());
+        notificationAdapter = new NotificationAdapter(notifications, notificationIDs, getContext());
         recyclerView.setAdapter(notificationAdapter);
 
 
@@ -61,6 +64,8 @@ public class NotificationFragment extends Fragment {
         mRootRef.child("notifications").child(mUserID).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                String notiID = dataSnapshot.getKey();
+                notificationIDs.add(0,notiID);
                 Notifications noti = dataSnapshot.getValue(Notifications.class);
                 notifications.add(0,noti);
                 notificationAdapter.notifyDataSetChanged();
@@ -83,9 +88,6 @@ public class NotificationFragment extends Fragment {
 
             }
         });
-
-
-
         return view;
     }
 

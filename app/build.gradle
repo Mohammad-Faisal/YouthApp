@@ -69,6 +69,9 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:4.3.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
 
+    //badges
+    compile "me.leolin:ShortcutBadger:1.1.21@aar"
+
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 
     //firebase
@@ -81,6 +84,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:11.0.4'
     implementation 'com.google.android.gms:play-services:11.0.4'
     implementation 'com.google.android.gms:play-services-maps:11.0.4'
+    implementation 'com.google.android.gms:play-services-location:11.0.4'
 
     // compile files('libs/activation.jar')
     // compile files('libs/additional.jar')
@@ -93,6 +97,10 @@ dependencies {
 
 
 }
+
+
+
+
 
 
 

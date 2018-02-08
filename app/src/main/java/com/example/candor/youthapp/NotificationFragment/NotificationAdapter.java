@@ -2,6 +2,7 @@ package com.example.candor.youthapp.NotificationFragment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.util.Log;
@@ -13,9 +14,11 @@ import android.widget.TextView;
 import com.example.candor.youthapp.COMMUNICATE.MEETINGS.MeetingActivity;
 import com.example.candor.youthapp.COMMUNICATE.MEETINGS.MeetingRooms;
 import com.example.candor.youthapp.GENERAL.GetTimeAgo;
+import com.example.candor.youthapp.GENERAL.MainActivity;
 import com.example.candor.youthapp.HOME.POST.CREATE_SHOW.ShowPostActivity;
 import com.example.candor.youthapp.PROFILE.ProfileActivity;
 import com.example.candor.youthapp.R;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -35,13 +38,15 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.NotificationViewHolder> {
 
     private List<Notifications> mNotificationList;
+    private List<String> mNotificationIDs;
     DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
     Context context;
 
     // ---- CONSTRUCTOR --//
-    public NotificationAdapter(List<Notifications> mNotificationList ,Context context){
+    public NotificationAdapter(List<Notifications> mNotificationList , List<String> mNotificationIDs, Context context){
         this.mNotificationList = mNotificationList;
         this.context = context;
+        this.mNotificationIDs = mNotificationIDs;
     }
 
 
@@ -68,8 +73,15 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
 
     @Override
     public void onBindViewHolder(final NotificationAdapter.NotificationViewHolder holder, int position) {
-        Notifications notiItem = mNotificationList.get(position);
+        final Notifications notiItem = mNotificationList.get(position);
         final String type = notiItem.getType();
+        final String notiID = mNotificationIDs.get(position);
+        String seen_status = notiItem.getSeen();
+        if(seen_status.equals("n")){
+            holder.itemView.setBackgroundColor(ContextCompat.getColor(context, R.color.Grey));
+        }else{
+            holder.itemView.setBackgroundColor(ContextCompat.getColor(context, R.color.White));
+        }
 
         if(type.equals("follow")){
             final String userID = notiItem.getUser_id();
@@ -84,10 +96,10 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
                     holder.setImage(imageURL , context , R.drawable.ic_blank_profile);
 
                     ////SETTING TIME AGO OF THE NOTIFICATION -//
-                    /*GetTimeAgo ob = new GetTimeAgo();
+                    GetTimeAgo ob = new GetTimeAgo();
                     long time = Long.parseLong(online);
                     String time_ago = ob.getTimeAgo(time ,context);
-                    holder.notificationTime.setText( time_ago);*/
+                    holder.notificationTime.setText( time_ago);
                 }
                 @Override
                 public void onCancelled(DatabaseError databaseError) {
@@ -105,17 +117,29 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent profileIntent = new Intent(context , ProfileActivity.class);
-                    profileIntent.putExtra("userID" , userID);
-                    context.startActivity(profileIntent);
+
+                    holder.itemView.setBackgroundColor(ContextCompat.getColor(context, R.color.White));
+                    mRootRef.child("notifications").child(MainActivity.mUserID).child(notiID).child("seen").setValue("y").addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Intent profileIntent = new Intent(context , ProfileActivity.class);
+                            profileIntent.putExtra("userID" , userID);
+                            context.startActivity(profileIntent);
+                        }
+                    });
+
                 }
             });
         }
         else if (type.equals("comment")  || type.equals("like")){
 
+
+
             final String userID = notiItem.getUser_id();
             final String online = notiItem.getTime_stamp();
             final String postID = notiItem.getContent_id();
+
+
             mRootRef.child("users").child(userID).addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
@@ -153,9 +177,15 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent showPostIntent = new Intent(context , ShowPostActivity.class);
-                    showPostIntent.putExtra("postID" , postID);
-                    context.startActivity(showPostIntent);
+                    holder.itemView.setBackgroundColor(ContextCompat.getColor(context, R.color.White));
+                    mRootRef.child("notifications").child(MainActivity.mUserID).child(notiID).child("seen").setValue("y").addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Intent showPostIntent = new Intent(context , ShowPostActivity.class);
+                            showPostIntent.putExtra("postID" , postID);
+                            context.startActivity(showPostIntent);
+                        }
+                    });
                 }
             });
         }else if(type.equals("invitation")){  ///add something
@@ -188,9 +218,15 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent showPostIntent = new Intent(context , MeetingActivity.class);
-                    showPostIntent.putExtra("meetingID" , meetingID);
-                    context.startActivity(showPostIntent);
+                    holder.itemView.setBackgroundColor(ContextCompat.getColor(context, R.color.White));
+                    mRootRef.child("notifications").child(MainActivity.mUserID).child(notiID).child("seen").setValue("y").addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Intent showPostIntent = new Intent(context , MeetingActivity.class);
+                            showPostIntent.putExtra("meetingID" , meetingID);
+                            context.startActivity(showPostIntent);
+                        }
+                    });
                 }
             });
         }
