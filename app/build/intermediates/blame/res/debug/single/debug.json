@@ -72,12 +72,12 @@
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xhdpi-v4\\quantum_ic_stop_grey600_48.png"
     },
     {
-        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_search_icon.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_search_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_12_dark.png.flat",
@@ -216,28 +216,28 @@
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.0.4.aar\\a9988ccc17412a3439ce9665cbe09d39\\res\\drawable-xhdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
-        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_comment_icon.png.flat",
-        "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_comment_icon.png"
-    },
-    {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_comment_icon.png.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_comment_icon.png"
     },
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_02_light.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_02_light.png"
     },
     {
-        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_indicator_material.xml.flat",
-        "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_48dp.png.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_forward_10_white_24.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxhdpi-v4\\quantum_ic_forward_10_white_24.png"
     },
     {
-        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_48dp.png.flat",
-        "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_indicator_material.xml.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -992,6 +992,10 @@
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xhdpi-v4\\quantum_ic_skip_previous_white_24.png"
     },
     {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_person_icon.png.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_person_icon.png"
+    },
+    {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\anim\\abc_popup_enter.xml"
     },
@@ -1614,6 +1618,10 @@
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_person_icon.png.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_person_icon.png"
     },
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_skip_next_grey600_36.png.flat",
@@ -2398,6 +2406,10 @@
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_vol_type_speaker_group_dark.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_vol_type_speaker_group_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_person_icon.png.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-mdpi\\ic_person_icon.png"
     },
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
@@ -3548,6 +3560,10 @@
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxhdpi-v4\\quantum_ic_skip_previous_white_36.png"
     },
     {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_meeting_room_single.xml.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\layout\\item_meeting_room_single.xml"
+    },
+    {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_07_dark.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_07_dark.png"
     },
@@ -4304,6 +4320,10 @@
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.0.4.aar\\50027c10c1c476529a45863ea862dc30\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
     },
     {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_person_icon.png.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-hdpi\\ic_person_icon.png"
+    },
+    {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_art_track_grey600_48.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxxhdpi-v4\\quantum_ic_art_track_grey600_48.png"
     },
@@ -4540,12 +4560,12 @@
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_grey600_48.png"
     },
     {
-        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mr_media_pause_light.xml.flat",
-        "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable\\mr_media_pause_light.xml"
-    },
-    {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_invite_people_to_meeting.xml.flat",
         "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\layout\\activity_invite_people_to_meeting.xml"
+    },
+    {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mr_media_pause_light.xml.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable\\mr_media_pause_light.xml"
     },
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_cast_ic_stop_circle_filled_grey600.png.flat",
@@ -5214,6 +5234,10 @@
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_stop_white_24.png.flat",
         "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xhdpi-v4\\quantum_ic_stop_white_24.png"
+    },
+    {
+        "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\font_nunito_extralight.ttf.flat",
+        "source": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\font\\nunito_extralight.ttf"
     },
     {
         "merged": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_bigtop_updates_white_24.png.flat",

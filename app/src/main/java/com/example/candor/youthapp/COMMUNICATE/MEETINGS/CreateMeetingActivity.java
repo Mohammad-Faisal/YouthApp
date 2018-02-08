@@ -92,7 +92,12 @@ public class CreateMeetingActivity extends AppCompatActivity {
                 details = mDetailsText.getText().toString();
                 title = mTitleText.getText().toString();
                 tag = mTags.getText().toString();
-                mMeetingImageUrl = image_download_url;
+                if(image_download_url!=null){
+                    mMeetingImageUrl = image_download_url;
+                }else{
+                    mMeetingImageUrl = "default";
+                }
+
 
                 final MeetingRooms meetingRooms = new MeetingRooms(title , type , details , tag ,moderator , mUserID , mMeetingId , "0" , mMeetingImageUrl);
 
@@ -116,6 +121,9 @@ public class CreateMeetingActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+
+
+
             CropImage.ActivityResult result = CropImage.getActivityResult(data);
             if (resultCode == RESULT_OK) {
                 Uri imagetUri = result.getUri();

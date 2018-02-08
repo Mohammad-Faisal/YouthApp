@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.candor.youthapp.GENERAL.MainActivity;
 import com.example.candor.youthapp.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
@@ -54,7 +55,7 @@ public class NotificationFragment extends Fragment {
 
 
         //--------- FIREBASE -------//
-        mUserID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        mUserID = MainActivity.mUserID;
         mRootRef = FirebaseDatabase.getInstance().getReference();
 
         mRootRef.child("notifications").child(mUserID).addChildEventListener(new ChildEventListener() {
@@ -63,13 +64,10 @@ public class NotificationFragment extends Fragment {
                 Notifications noti = dataSnapshot.getValue(Notifications.class);
                 notifications.add(0,noti);
                 notificationAdapter.notifyDataSetChanged();
-
             }
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
             }
-
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
 
@@ -85,8 +83,6 @@ public class NotificationFragment extends Fragment {
 
             }
         });
-
-
 
 
 
