@@ -114,6 +114,24 @@ public class MeetingActivity extends AppCompatActivity {
         loadMessages();
 
 
+        //-- SETTING TITLE FOR THE TEXT VIEW -//
+        final TextView mTitleTextView = findViewById(R.id.group_chat_title);
+        mRootRef.child("meetings").child(mMeetingID).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String title = dataSnapshot.child("title").getValue().toString();
+                mTitleTextView.setText(title);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+
+
+
 
         //creating a new firebase entry for current chat if it doesnt exist or loading the previous ones
         mRootRef.child("meeting_messages").addValueEventListener(new ValueEventListener() {

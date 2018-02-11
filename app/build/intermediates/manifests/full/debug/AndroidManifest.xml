@@ -90,7 +90,13 @@
             android:theme="@style/Base.Theme.AppCompat" />
         <activity
             android:name="com.example.candor.youthapp.PROFILE.ProfileActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROFILE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.example.candor.youthapp.PROFILE.SettingsActivity"
             android:screenOrientation="portrait" />
@@ -131,6 +137,16 @@
         <activity
             android:name="com.example.candor.youthapp.MAP.MapsActivity"
             android:label="@string/title_activity_maps" />
+
+        <service android:name="com.example.candor.youthapp.GENERAL.FirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
 
         <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
 

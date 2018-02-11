@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="serif"
+                    android:fontFamily="@font/nunito_extralight"
                     android:text="Mohammad Faisal"
                     android:textColor="?android:attr/textColorPrimaryNoDisable"
                     android:textSize="14sp"
@@ -54,6 +54,7 @@
                         android:src="@drawable/ic_location_grey"
                         android:layout_marginTop="2dp"/>
                     <TextView
+                        android:fontFamily="@font/nunito_extralight"
                         android:layout_marginLeft="5dp"
                         android:id="@+id/post_time_date"
                         android:textSize="10sp"
@@ -70,6 +71,7 @@
                         android:src="@drawable/ic_location_grey"
                         android:layout_marginTop="2dp"/>
                     <TextView
+                        android:fontFamily="@font/nunito_extralight"
                         android:layout_marginLeft="5dp"
                         android:layout_gravity="center_vertical"
                         android:id="@+id/post_location"
@@ -82,33 +84,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-
-            <LinearLayout
-                android:layout_marginTop="8dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
-
-
-                <ImageButton
-                    android:id="@+id/post_like_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="2dp"
-                    android:background="@android:color/transparent"
-                    android:src="@drawable/ic_love_empty" />
-
-
-                <TextView
-                    android:id="@+id/post_like_number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:textSize="9sp"
-                    android:layout_marginRight="10dp"
-                    android:text="1000"/>
-            </LinearLayout>
         </LinearLayout>
 
         <View
@@ -140,7 +115,36 @@
             android:layout_marginRight="10dp">
 
 
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <ImageButton
+                    android:id="@+id/post_like_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_love_empty" />
+
+
+                <TextView
+                    android:id="@+id/post_like_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="9sp"
+                    android:layout_marginRight="10dp"
+                    android:text="1000"/>
+            </LinearLayout>
+
+
             <TextView
+                android:fontFamily="@font/nunito_extralight"
                 android:id="@+id/post_caption"
                 android:layout_width="0dp"
                 android:layout_weight="1"

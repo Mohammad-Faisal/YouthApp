@@ -27,6 +27,8 @@
     <string name="title_activity_maps">Map</string>
     <string name="all">all</string>
 
+    <string name="default_notification_channel_id">YouthApp_CH-1</string>
+
 
 
     <string-array name="tags">

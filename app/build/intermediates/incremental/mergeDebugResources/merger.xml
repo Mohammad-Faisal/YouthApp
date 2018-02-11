@@ -2772,7 +2772,7 @@
         <item>Slum Education</item>
         <item>Street Worker</item>
         <item>Child Rights</item>
-    </string-array></file><file path="C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </string-array><string name="default_notification_channel_id">YouthApp_CH-1</string></file><file path="C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

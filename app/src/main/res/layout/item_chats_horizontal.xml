@@ -22,6 +22,7 @@
             android:id="@+id/chats_item_horizontal_text"
             android:layout_width="60dp"
             android:text="name"
+            android:textSize="8sp"
             android:textStyle="bold"
             android:textColor="@color/White"
             android:textAlignment="center"

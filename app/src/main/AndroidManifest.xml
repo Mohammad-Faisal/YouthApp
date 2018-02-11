@@ -37,7 +37,6 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -46,12 +45,20 @@
             android:label="@string/title_activity_create_blog"
             android:screenOrientation="portrait" />
         <activity android:name=".HOME.POST.CREATE_SHOW.CreatePostActivity" />
+
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
+
         <activity
             android:name=".PROFILE.ProfileActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.PROFILE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".PROFILE.SettingsActivity"
             android:screenOrientation="portrait" />
@@ -92,6 +99,16 @@
         <activity
             android:name=".MAP.MapsActivity"
             android:label="@string/title_activity_maps"></activity>
+
+        <service android:name=".GENERAL.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id"/>
+
     </application>
 
 </manifest>
