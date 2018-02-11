@@ -10,20 +10,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/White">
 
         <LinearLayout
+            android:background="@color/White"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Button
+                android:background="@drawable/button_shape_1"
                 android:id="@+id/group_chat_add_people"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="add"
+                android:textStyle="bold"
+                android:textSize="16sp"
                 android:textAllCaps="false"/>
             <TextView
+                android:fontFamily="@font/nunito_extralight"
+                android:textSize="18sp"
+                android:textColor="@color/Black"
                 android:id="@+id/group_chat_title"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
@@ -31,19 +39,20 @@
                 android:text="title goes here"
                 android:textAlignment="center"/>
             <Button
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@drawable/button_shape_1"
                 android:id="@+id/group_chat_leave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="leave"
                 android:textAllCaps="false"/>
 
-
-
         </LinearLayout>
 
 
         <android.support.v4.widget.SwipeRefreshLayout
-            android:background="@color/color2"
+            android:background="@color/White"
             android:id="@+id/group_swipe_message_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,13 +74,17 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <EditText
+                android:fontFamily="@font/nunito_extralight"
+                android:background="@drawable/search_text_background"
                 android:id="@+id/group_chat_write_message"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
-                android:textSize="18sp"
-                android:hint="Message" />
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:hint="  Write your opinion here..." />
             <ImageButton
                 android:id="@+id/group_chat_send_message"
                 android:layout_width="wrap_content"

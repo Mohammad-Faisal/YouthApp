@@ -25,4 +25,21 @@
     <string name="days_ago">days ago</string>
     <string name="title_activity_communication">CommunicationActivity</string>
     <string name="title_activity_maps">Map</string>
+    <string name="all">all</string>
+
+
+
+    <string-array name="tags">
+        <item>all</item>
+        <item>Child Marrige</item>
+        <item>Women Empowermet</item>
+        <item>Relief</item>
+        <item>Slum Education</item>
+        <item>Street Worker</item>
+        <item>Child Rights</item>
+    </string-array>
+
+
+
+
 </resources>

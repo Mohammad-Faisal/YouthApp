@@ -33,14 +33,12 @@
                 android:layout_height="wrap_content"
                 android:text="100 people liked your post"
                 android:textAlignment="center"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/show_post_comment_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 ></android.support.v7.widget.RecyclerView>
-
-
         </LinearLayout>
 
         <LinearLayout
@@ -51,14 +49,18 @@
             android:orientation="horizontal">
 
             <EditText
+                android:fontFamily="@font/nunito_extralight"
+                android:background="@drawable/search_text_background"
                 android:id="@+id/show_post_comment_write"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"
-                android:hint="Write your comment here"
-                android:textSize="18sp" />
+                android:hint="  Write your comment here"
+                android:textSize="14sp" />
             <ImageButton
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="5dp"
                 android:id="@+id/show_post_comment_post"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

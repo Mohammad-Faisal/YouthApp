@@ -111,7 +111,6 @@ public class ChatsFragment extends Fragment {
                 verticalList.add(chatBuddies);
 
                 verticalAdapter.notifyDataSetChanged();
-                Toast.makeText(getContext(), "the size is   " + verticalList.get(2).getLast_message(), Toast.LENGTH_SHORT).show();
             }
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
@@ -137,7 +136,6 @@ public class ChatsFragment extends Fragment {
                     String thumb_image = dataSnapshot.child("thumb_image").getValue().toString();
                     String name = dataSnapshot.child("name").getValue().toString();
                     String id = dataSnapshot.child("id").getValue().toString();
-                    Toast.makeText(getContext(), name, Toast.LENGTH_SHORT).show();
                     horizontalList.add(new Actives(id , name , thumb_image));
                     horizontalList.add(new Actives(id , name , thumb_image));
                     horizontalList.add(new Actives(id , name , thumb_image));
@@ -196,7 +194,7 @@ public class ChatsFragment extends Fragment {
                 = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext() , 2);
 
-        vertical_recycler_view.setLayoutManager(gridLayoutManager);
+        vertical_recycler_view.setLayoutManager(verticalLayoutmanager);
 
         LinearLayoutManager horizontalLayoutManagaer
                 = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
@@ -303,7 +301,11 @@ public class ChatsFragment extends Fragment {
         @Override
         public void onBindViewHolder(final MyViewHolder holder, final int position) {
 
-            holder.chats_hor_message.setText(verticalList.get(position).getLast_message());
+            String message = verticalList.get(position).getLast_message();
+            String upToNCharacters = message.substring(0, Math.min(message.length(), 30));
+            if(message.length() >30)upToNCharacters = upToNCharacters+"...";
+
+            holder.chats_hor_message.setText(upToNCharacters);
             holder.chats_hor_name.setText(verticalList.get(position).getUser_name());
 
             ////SETTING TIME AGO OF THE NOTIFICATION -//

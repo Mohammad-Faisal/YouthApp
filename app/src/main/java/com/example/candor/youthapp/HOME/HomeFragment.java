@@ -77,13 +77,15 @@ public class HomeFragment extends Fragment {
                 if(position == 0){
                     mHomeFragmentFloating.setVisibility(View.VISIBLE);
                     tab_position = 0;
-                } else if(position == 1){
+                }
+               /* else if(position == 1){
                     mHomeFragmentFloating.setVisibility(View.VISIBLE);
                     tab_position = 1;
-                }else{
+                }
+                else{
                     mHomeFragmentFloating.setVisibility(View.INVISIBLE);
                     tab_position = 2;
-                }
+                }*/
             }
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
@@ -102,8 +104,8 @@ public class HomeFragment extends Fragment {
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getChildFragmentManager());
         adapter.addFragment(new NewsFeedFragment(), "NewsFeed");
-        adapter.addFragment(new BlogFragment(), "Blog");
-        adapter.addFragment(new RankingFragment(), "Ranking");
+        //adapter.addFragment(new BlogFragment(), "Blog");
+        //adapter.addFragment(new RankingFragment(), "Ranking");
         viewPager.setAdapter(adapter);
     }
 }

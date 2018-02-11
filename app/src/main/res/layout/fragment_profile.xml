@@ -7,312 +7,335 @@
         tools:context="com.example.candor.youthapp.PROFILE.ProfileFragment"
         android:background="@android:color/black">
 
-
-        <ImageView
-            android:id="@+id/profile_blur_image"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:alpha="0.3"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_blank_profile" />
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_alignBottom="@+id/profile_blur_image"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="80dp"
-            android:src="@drawable/ic_blank_profile"
-            android:id="@+id/profile_image" />
-
-        <ImageButton
-            android:id="@+id/profile_image_change_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/cardView"
-            android:layout_alignParentEnd="true"
-            android:background="@android:color/transparent"
-            android:src="@drawable/ic_chat_icon" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/profile_blur_image"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="45dp"
-            android:background="@android:color/transparent"
-            android:text="Mohammad Faisal"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:id="@+id/profile_name"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/profile_blur_image"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="17dp"
-            android:background="@android:color/transparent"
-            android:text="Dhaka , Bangladesh"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textSize="14sp"
-            android:id="@+id/profile_work" />
-
-        <android.support.v7.widget.CardView
-            android:elevation="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/profile_blur_image"
-            android:layout_marginTop="10dp"
-            android:id="@+id/cardView">
+            android:orientation="vertical">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent">
 
-                <LinearLayout
+                <ImageView
+                    android:id="@+id/profile_blur_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:alpha="0.3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_blank_profile" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignBottom="@+id/profile_blur_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="80dp"
+                    android:src="@drawable/ic_blank_profile"
+                    android:id="@+id/profile_image" />
+
+                <ImageButton
+                    android:id="@+id/profile_image_change_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/cardView"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_chat_icon" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/profile_blur_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="45dp"
+                    android:background="@android:color/transparent"
+                    android:text="Mohammad Faisal"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:id="@+id/profile_name"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/profile_blur_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="17dp"
+                    android:background="@android:color/transparent"
+                    android:text="Dhaka , Bangladesh"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:id="@+id/profile_work" />
+
+                <android.support.v7.widget.CardView
+                    android:elevation="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp">
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_marginLeft="3dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:src="@drawable/ic_phone_icon" />
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="phone_number"
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:focusableInTouchMode="true"
-                        android:id="@+id/profile_mobile_no"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:text="01684404780"
-                        android:textAlignment="viewEnd"
-                        android:textColor="@android:color/darker_gray"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.7dp"
-                    android:background="@android:color/darker_gray"
-                    android:layout_marginTop="10dp">
-                </View>
-
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_blur_image"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
+                    android:id="@+id/cardView">
 
-
-                    <ImageView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:src="@drawable/ic_email_icon" />
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="5dp"
-                        android:text="Email"
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
 
-                    <TextView
-                        android:id="@+id/profile_email"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:text="mohammadfaisal1011_gmail_com"
-                        android:textAlignment="viewEnd"
-                        android:textColor="@android:color/darker_gray"
-                        android:textSize="12sp" />
-                </LinearLayout>
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_marginLeft="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/ic_phone_icon" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.7dp"
-                    android:background="@android:color/darker_gray"
-                    android:id="@+id/v2"
-                    android:layout_marginTop="10dp">
-                </View>
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="phone_number"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:focusableInTouchMode="true"
+                                android:id="@+id/profile_mobile_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:text="01684404780"
+                                android:textAlignment="viewEnd"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_marginTop="10dp">
+                        </View>
 
 
-                <LinearLayout
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:src="@drawable/ic_email_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Email"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/profile_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:text="mohammadfaisal1011_gmail_com"
+                                android:textAlignment="viewEnd"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@android:color/darker_gray"
+                            android:id="@+id/v2"
+                            android:layout_marginTop="10dp">
+                        </View>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:layout_marginLeft="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_date_icon" />
+
+                            <TextView
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date of Birth"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/profile_date_of_birth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:textAlignment="viewEnd"
+                                android:text="18 september, 1995"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_marginTop="10dp">
+                        </View>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below = "@id/v2"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:layout_marginLeft="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_blood_group_icon" />
+
+                            <TextView
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Blood Group"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/profile_blood_group"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:textAlignment="viewEnd"
+                                android:text="B(-)"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.7dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_marginTop="10dp">
+                        </View>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:layout_marginLeft="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_bio_icon" />
+
+                            <TextView
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bio"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/profile_bio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:textAlignment="viewEnd"
+                                android:text="Describe yourself"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/profile_edit_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp">
+                    android:text="Edit"
+                    android:layout_alignStart="@+id/cardView"
+                    android:layout_below="@+id/cardView"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"/>
+            </RelativeLayout>
 
-                    <ImageView
-                        android:layout_marginLeft="3dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_date_icon" />
-
-                    <TextView
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Date of Birth"
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/profile_date_of_birth"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:textAlignment="viewEnd"
-                        android:text="18 september, 1995"
-                        android:textColor="@android:color/darker_gray"
-                        android:textSize="14sp" />
-                </LinearLayout>
-
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.7dp"
-                    android:background="@android:color/darker_gray"
-                    android:layout_marginTop="10dp">
-                </View>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_below = "@id/v2"
-                    android:layout_marginTop="10dp">
-
-                    <ImageView
-                        android:layout_marginLeft="3dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_blood_group_icon" />
-
-                    <TextView
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Blood Group"
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/profile_blood_group"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:textAlignment="viewEnd"
-                        android:text="B(-)"
-                        android:textColor="@android:color/darker_gray"
-                        android:textSize="14sp" />
-                </LinearLayout>
+        </LinearLayout>
 
 
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.7dp"
-                    android:background="@android:color/darker_gray"
-                    android:layout_marginTop="10dp">
-                </View>
+
+    </ScrollView>
 
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp">
-
-                    <ImageView
-                        android:layout_marginLeft="3dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_bio_icon" />
-
-                    <TextView
-                        android:layout_marginLeft="6dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bio"
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/profile_bio"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1"
-                        android:textAlignment="viewEnd"
-                        android:text="Describe yourself"
-                        android:textColor="@android:color/darker_gray"
-                        android:textSize="14sp" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-        <Button
-            android:id="@+id/profile_edit_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Edit"
-            android:layout_alignStart="@+id/cardView"
-            android:layout_below="@+id/cardView"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"/>
 
 
     </RelativeLayout>

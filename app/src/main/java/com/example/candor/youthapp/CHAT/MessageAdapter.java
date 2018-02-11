@@ -44,31 +44,6 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
         Messages c = mMessageList.get(position);
         holder.messageText.setText(c.getMessage());
-
-        /*mAuth = FirebaseAuth.getInstance();
-        String current_user_id = mAuth.getCurrentUser().getUid();  //ke chat kortese
-        String from_user = c.getFrom();    //kar message amra show korbo ?  jodi duita same hoy tar mane eita amr e message ar na hole eita onnojoner
-        if(from_user!=null){
-            if(from_user.equals(current_user_id)){
-
-                Log.d("kam hoy  " , "same");
-                final FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) holder.messageText.getLayoutParams();
-                params.gravity = GravityCompat.START; // or GravityCompat.END
-                holder.messageText.setLayoutParams(params);
-                holder.messageText.setBackgroundColor(Color.WHITE);
-                holder.messageText.setTextColor(Color.BLACK);
-                holder.messageText.setText(c.getMessage());
-            }
-            else{
-                Log.d("kam hoy  " , "alada");
-                final FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) holder.messageText.getLayoutParams();
-                params.gravity = GravityCompat.END; // or GravityCompat.END
-                holder.messageText.setLayoutParams(params);
-                holder.messageText.setBackgroundColor(Color.BLACK);
-                holder.messageText.setTextColor(Color.WHITE);
-                holder.messageText.setText(c.getMessage());
-            }
-        }*/
     }
     @Override public int getItemViewType(int position) {
         mAuth = FirebaseAuth.getInstance();
@@ -82,9 +57,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
     }
 
     public class MessageViewHolder  extends RecyclerView.ViewHolder{
-
         public TextView messageText;
-
         public MessageViewHolder(View itemView) {
             super(itemView);
             messageText = itemView.findViewById(R.id.message_item_text);

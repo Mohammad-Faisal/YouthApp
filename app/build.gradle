@@ -85,6 +85,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services:11.0.4'
     implementation 'com.google.android.gms:play-services-maps:11.0.4'
     implementation 'com.google.android.gms:play-services-location:11.0.4'
+    compile 'com.google.maps.android:android-maps-utils:0.5+'
 
     // compile files('libs/activation.jar')
     // compile files('libs/additional.jar')

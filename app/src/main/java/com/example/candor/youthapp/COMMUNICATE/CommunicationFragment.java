@@ -155,7 +155,7 @@ public class CommunicationFragment extends Fragment {
     private void setupViewPager(ViewPager viewPager) {
         CommunicationAdapter adapter = new CommunicationAdapter(getChildFragmentManager());
         adapter.addFragment(new ChatsFragment(), "Chats");
-        adapter.addFragment(new LeadersFragment(), "Leaders");
+        //adapter.addFragment(new LeadersFragment(), "Leaders");
         adapter.addFragment(new MeetingFragment(), "Meetings");
         viewPager.setAdapter(adapter);
     }

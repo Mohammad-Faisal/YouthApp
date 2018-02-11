@@ -6,6 +6,7 @@ INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidMani
 INJECTED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:2:1-97:12
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\bdc5cdcc464a63c2dd0965d8038b7886\AndroidManifest.xml:2:1-19:12
 MERGED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e2ac8530f00afeb1c39136d4e993c2f8\AndroidManifest.xml:2:1-52:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ccd52e7d007f8af65d143f00fc5f85de\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\bfa4ef4710b62b26a173d656a87538cb\AndroidManifest.xml:2:1-6:12
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.5.1.aar\af52148421079c402bdbaa1a093a62c6\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.gms:play-services:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\play-services-11.0.4.aar\f1381d0d642f3d123623ea53718e9501\AndroidManifest.xml:2:1-6:12
@@ -206,6 +207,8 @@ application
 ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:26:5-95:19
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\bdc5cdcc464a63c2dd0965d8038b7886\AndroidManifest.xml:13:5-17:19
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\bdc5cdcc464a63c2dd0965d8038b7886\AndroidManifest.xml:13:5-17:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ccd52e7d007f8af65d143f00fc5f85de\AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ccd52e7d007f8af65d143f00fc5f85de\AndroidManifest.xml:7:5-11:19
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\bfa4ef4710b62b26a173d656a87538cb\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\bfa4ef4710b62b26a173d656a87538cb\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\play-services-11.0.4.aar\f1381d0d642f3d123623ea53718e9501\AndroidManifest.xml:5:5-20
@@ -444,6 +447,8 @@ meta-data#com.google.android.gms.version
 ADDED from C:\Users\Mohammad Faisal\Desktop\YouthApp\app\src\main\AndroidManifest.xml:88:9-90:69
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\bdc5cdcc464a63c2dd0965d8038b7886\AndroidManifest.xml:14:9-16:69
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\bdc5cdcc464a63c2dd0965d8038b7886\AndroidManifest.xml:14:9-16:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ccd52e7d007f8af65d143f00fc5f85de\AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ccd52e7d007f8af65d143f00fc5f85de\AndroidManifest.xml:8:9-10:69
 MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-2.3.0.aar\0339f17859f7aa0bed4adbb6fec3dc1c\AndroidManifest.xml:16:9-18:69
 MERGED from [com.firebaseui:firebase-ui-auth:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-auth-2.3.0.aar\0339f17859f7aa0bed4adbb6fec3dc1c\AndroidManifest.xml:16:9-18:69
 MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\9c11fb76a47118a2ecd3d320eb2c1f63\AndroidManifest.xml:20:9-121
@@ -466,6 +471,8 @@ MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal
 MERGED from [com.firebaseui:firebase-ui-database:2.3.0] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-2.3.0.aar\bdc5cdcc464a63c2dd0965d8038b7886\AndroidManifest.xml:7:5-9:41
 MERGED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e2ac8530f00afeb1c39136d4e993c2f8\AndroidManifest.xml:7:5-9:41
 MERGED from [me.leolin:ShortcutBadger:1.1.21] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.21.aar\e2ac8530f00afeb1c39136d4e993c2f8\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ccd52e7d007f8af65d143f00fc5f85de\AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.5.aar\ccd52e7d007f8af65d143f00fc5f85de\AndroidManifest.xml:5:5-43
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\bfa4ef4710b62b26a173d656a87538cb\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\bfa4ef4710b62b26a173d656a87538cb\AndroidManifest.xml:4:5-43
 MERGED from [com.theartofdev.edmodo:android-image-cropper:2.5.1] C:\Users\Mohammad Faisal\.gradle\caches\transforms-1\files-1.1\android-image-cropper-2.5.1.aar\af52148421079c402bdbaa1a093a62c6\AndroidManifest.xml:8:5-10:41

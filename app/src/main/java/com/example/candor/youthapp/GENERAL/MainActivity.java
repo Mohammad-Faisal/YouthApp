@@ -1,9 +1,14 @@
 package com.example.candor.youthapp.GENERAL;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Location;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -15,13 +20,20 @@ import android.widget.Toast;
 import com.example.candor.youthapp.COMMUNICATE.CommunicationFragment;
 import com.example.candor.youthapp.HOME.HomeFragment;
 import com.example.candor.youthapp.MAP.MapsActivity;
+import com.example.candor.youthapp.MAP.UserLocation;
 import com.example.candor.youthapp.NotificationFragment.NotificationFragment;
 import com.example.candor.youthapp.PROFILE.ProfileFragment;
 import com.example.candor.youthapp.R;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.ErrorCodes;
 import com.firebase.ui.auth.IdpResponse;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -154,6 +166,35 @@ public class MainActivity extends AppCompatActivity {
         int badgeCount = 1;
         ShortcutBadger.applyCount(MainActivity.this, badgeCount); //for 1.1.4+
         //ShortcutBadger.with(getApplicationContext()).count(badgeCount);
+
+
+
+        FusedLocationProviderClient mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+
+        final DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            //  return;
+        }
+        mFusedLocationClient.getLastLocation()
+                .addOnSuccessListener(this, new OnSuccessListener<Location>() {
+                    @Override
+                    public void onSuccess(Location location) {
+                        // Got last known location. In some rare situations this can be null.
+                        if (location != null) {
+                            UserLocation mUserLocation = new UserLocation(location.getLatitude() , location.getLongitude() , mUserID);
+                            mRootRef.child("map_locations").child(mUserID).setValue(mUserLocation);
+                        }
+                    }
+                });
+
+
     }
 
 

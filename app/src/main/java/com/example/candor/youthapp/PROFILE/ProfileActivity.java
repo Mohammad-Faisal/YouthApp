@@ -115,6 +115,7 @@ public class ProfileActivity extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //mRootRef.child("users").child(mUserID).child("device_id").setValue("n"); // delete kora jabena broh
                 FirebaseAuth.getInstance().signOut();
                 finish();
             }

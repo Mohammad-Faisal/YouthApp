@@ -209,6 +209,7 @@
     <orderEntry type="library" name="com.google.android.gms:play-services-auth-base-11.0.4" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-maps-11.0.4" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-tagmanager-api-11.0.4" level="project" />
+    <orderEntry type="library" name="com.google.maps.android:android-maps-utils-0.5" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-gass-11.0.4" level="project" />
     <orderEntry type="library" name="com.android.support:cardview-v7-26.1.0" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-location-11.0.4" level="project" />
