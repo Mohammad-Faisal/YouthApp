@@ -88,11 +88,9 @@ public class CommunicationFragment extends Fragment {
                     MainActivity.mUserName = dataSnapshot.child("name").getValue().toString();
                     MainActivity.mUserThumbImage = dataSnapshot.child("thumb_image").getValue().toString();
                 }else{
-                    Toast.makeText(getContext(), "baler matha !", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(), "baler matha !", Toast.LENGTH_SHORT).show();
                 }
-
             }
-
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
@@ -105,22 +103,18 @@ public class CommunicationFragment extends Fragment {
             public void onClick(View view) {
                 if(tab_position == 0 )
                 {
+                    mCommunicationFragmentFloating.setVisibility(View.GONE);
                     Intent blogIntent = new Intent(getActivity() , CreateBlogActivity.class);
                     startActivity(blogIntent);
                 }
-                else if(tab_position==2)
+                else if(tab_position==1)
                 {
+                    mCommunicationFragmentFloating.setVisibility(View.VISIBLE);
                     Intent createMeetingIntent = new Intent(getActivity() , CreateMeetingActivity.class);
                     startActivity(createMeetingIntent);
                 }
-                else
-                {
-
-                }
             }
         });
-
-
 
 
         tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -140,11 +134,9 @@ public class CommunicationFragment extends Fragment {
             }
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-
             }
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-
             }
         });
         return  view;

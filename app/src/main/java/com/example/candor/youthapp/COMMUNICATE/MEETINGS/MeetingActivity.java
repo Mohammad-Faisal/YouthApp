@@ -42,9 +42,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class MeetingActivity extends AppCompatActivity {
 
 
-
-
-
     private String mMeetingID;
     private static final String TAG = "Group chat ACTIVITY";
 
@@ -128,9 +125,6 @@ public class MeetingActivity extends AppCompatActivity {
 
             }
         });
-
-
-
 
 
         //creating a new firebase entry for current chat if it doesnt exist or loading the previous ones

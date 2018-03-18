@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.candor.youthapp.CHAT.Messages;
+import com.example.candor.youthapp.GENERAL.MainActivity;
 import com.example.candor.youthapp.HOME.POST.COMMENT.Comments;
 import com.example.candor.youthapp.HOME.POST.COMMENT.PostCommentAdapter;
 import com.example.candor.youthapp.HOME.POST.CREATE_SHOW.Posts;
@@ -66,7 +67,7 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     private Activity activity;
     public boolean likeFunction = false;
 
-    private DatabaseReference mPostsDatabaseReference , mUserDatabaseReference ,  mRootRef;
+    private DatabaseReference mRootRef;
     private String mUserID;
 
 
@@ -95,7 +96,7 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         imageLoader=new ImageLoader(context);
         this.mRootRef = FirebaseDatabase.getInstance().getReference();
         this.mRootRef.keepSynced(true);
-        this.mUserID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        this.mUserID = MainActivity.mUserID;
 
 
         final LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
@@ -113,7 +114,6 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 }
             }
         });
-
     }
 
 
@@ -443,28 +443,6 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         }
     }
-
-
-    /*@Override
-    public void onBindViewHolder(CustomViewHolder holder, int position) {
-        info currentInfo = data.get(position);
-        holder.txt.setText(currentInfo.getName());
-
-        imageLoader.DisplayImage(currentInfo.getImgURL(), holder.img);
-
-        *//*Picasso.with(holder.img.getContext())
-                .load(currentInfo.getImgURL())
-                .fit()
-                .into(holder.img);*//*
-
-        holder.txt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(  context ,"nothing",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-    }*/
 
     public Object getItem(int position) {return position;}
     public long getItemId(int position) {

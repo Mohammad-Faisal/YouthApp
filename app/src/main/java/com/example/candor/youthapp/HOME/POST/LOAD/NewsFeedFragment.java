@@ -1,8 +1,10 @@
 package com.example.candor.youthapp.HOME.POST.LOAD;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -12,6 +14,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.candor.youthapp.GENERAL.MainActivity;
+import com.example.candor.youthapp.HOME.BLOG.CreateBlogActivity;
+import com.example.candor.youthapp.HOME.POST.CREATE_SHOW.CreatePostActivity;
 import com.example.candor.youthapp.HOME.POST.CREATE_SHOW.Posts;
 import com.example.candor.youthapp.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -46,20 +51,10 @@ public class NewsFeedFragment extends Fragment {
     long currently_minimum_timestamp = 0;
 
     //variables
-    private String mOtherUseID;
     private String mCurrentUserID;
-    private String mOtherUserName;
 
     //firebase
-    private DatabaseReference mCurrentUserDatabaseReference;
-    private DatabaseReference mOtherUserDatabaseReference;
-    private DatabaseReference mMessageReference;
     private DatabaseReference mRootRef;
-    private FirebaseUser mUser;
-
-
-
-
 
     public NewsFeedFragment() {
         // Required empty public constructor
@@ -87,18 +82,24 @@ public class NewsFeedFragment extends Fragment {
         recyclerView.setAdapter(newsFeedAdapter);
 
 
+        //floating action button
+        FloatingActionButton mNewsFragmentFloating = view.findViewById(R.id.news_fragment_floating);
+        mNewsFragmentFloating.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    Intent postIntent = new Intent(getActivity() , CreatePostActivity.class);
+                    startActivity(postIntent);
+            }
+        });
+
+
 
         //firebase
-        mUser = FirebaseAuth.getInstance().getCurrentUser();
-        mCurrentUserID = mUser.getUid();
-        mCurrentUserDatabaseReference = FirebaseDatabase.getInstance().getReference().child("users").child(mCurrentUserID);
+        //mUser = FirebaseAuth.getInstance().getCurrentUser();
+        mCurrentUserID = MainActivity.mUserID;
         mRootRef = FirebaseDatabase.getInstance().getReference();
-        mMessageReference = FirebaseDatabase.getInstance().getReference();
-
 
         initial_load_from_net();
-
-
         newsFeedAdapter.setOnLoadMoreListener(new OnLoadMoreListener() {
             @Override
             public void onLoadMore() {
@@ -116,7 +117,7 @@ public class NewsFeedFragment extends Fragment {
                             loadMorePosts();
                             newsFeedAdapter.setLoaded();
                         }
-                    }, 5000);
+                    }, 2000);
                 } else {
                     Toast.makeText(getContext(), "Loading data completed", Toast.LENGTH_SHORT).show();
                 }
@@ -128,9 +129,9 @@ public class NewsFeedFragment extends Fragment {
 
     private void initial_load_from_net()
     {
-        DatabaseReference messageQueryRef = mRootRef.child("posts");
-        Query messageQuery = messageQueryRef.orderByChild("timestamp").limitToFirst(1000);
-        messageQuery.addChildEventListener(new ChildEventListener() {
+        DatabaseReference postsQueryRef = mRootRef.child("posts");
+        Query postsQuery = postsQueryRef.orderByChild("timestamp").limitToFirst(1000);
+        postsQuery.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
@@ -148,7 +149,6 @@ public class NewsFeedFragment extends Fragment {
             }
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
             }
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
@@ -175,5 +175,4 @@ public class NewsFeedFragment extends Fragment {
             cur_index+=2;
         }
     }
-
 }

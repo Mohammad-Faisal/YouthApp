@@ -210,7 +210,6 @@ public class ChatsFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-
     }
 
     public class HorizontalAdapter extends RecyclerView.Adapter<HorizontalAdapter.MyViewHolder> {
@@ -297,7 +296,6 @@ public class ChatsFragment extends Fragment {
                     .inflate(R.layout.item_chats_single_vertical, parent, false);
             return new MyViewHolder(itemView);
         }
-
         @Override
         public void onBindViewHolder(final MyViewHolder holder, final int position) {
 
@@ -329,15 +327,7 @@ public class ChatsFragment extends Fragment {
                     startActivity(chatIntent);
                 }
             });
-
-
-            /*holder.txtView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                }
-            });*/
         }
-
         @Override
         public int getItemCount() {
             return verticalList.size();

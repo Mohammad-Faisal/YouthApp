@@ -1,10 +1,7 @@
 package com.example.candor.youthapp.MAP;
 
 import android.Manifest;
-import android.app.Activity;
-import android.content.Context;
 import android.content.pm.PackageManager;
-import android.graphics.Camera;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
@@ -15,7 +12,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
@@ -26,33 +22,21 @@ import android.widget.Toast;
 
 import com.example.candor.youthapp.GENERAL.MainActivity;
 import com.example.candor.youthapp.R;
-import com.firebase.ui.auth.User;
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.Api;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
-import com.google.android.gms.gcm.Task;
 import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.GeofencingClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.places.GeoDataApi;
-import com.google.android.gms.location.places.PlaceDetectionApi;
-import com.google.android.gms.location.places.Places;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -60,12 +44,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.io.FileDescriptor;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
@@ -130,7 +111,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 LatLng mLatLng  = new LatLng(t.getLat() ,  t.getLng());
                 MarkerOptions mMarkerOptions = new MarkerOptions();
                 mMarkerOptions.position(mLatLng);
-                mMarkerOptions.title(MainActivity.mUserName);
+                mMarkerOptions.title(dataSnapshot.child("userName").getValue().toString());
                 mMarkerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
                 //mMap.addMarker(mMarkerOptions);
 
@@ -221,7 +202,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             mMap.animateCamera(CameraUpdateFactory
                                     .newCameraPosition(cameraPosition));
                             //pushing this data to firebase
-                            UserLocation mUserLocation = new UserLocation(location.getLatitude() , location.getLongitude() , mUserID);
+                            UserLocation mUserLocation = new UserLocation(location.getLatitude() , location.getLongitude() , mUserID, MainActivity.mUserName);
                             mRootRef.child("map_locations").child(mUserID).setValue(mUserLocation);
                         }
                     }
@@ -313,7 +294,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-
     @Override
     public void onLocationChanged(Location location) {
         mLastLocation = location;
@@ -321,7 +301,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mCurrentLocationMarker.remove();
         }
         //pushing this data to firebase
-        UserLocation mUserLocation = new UserLocation(location.getLatitude() , location.getLongitude() , mUserID);
+        String userName = MainActivity.mUserName;
+        UserLocation mUserLocation = new UserLocation(location.getLatitude() , location.getLongitude() , mUserID, userName);
         mRootRef.child("map_locations").child(mUserID).setValue(mUserLocation);
 
 

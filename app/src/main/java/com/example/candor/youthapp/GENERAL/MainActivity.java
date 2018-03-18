@@ -4,13 +4,14 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.os.Build;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 
 import com.example.candor.youthapp.COMMUNICATE.CommunicationFragment;
 import com.example.candor.youthapp.HOME.HomeFragment;
+import com.example.candor.youthapp.HOME.POST.LOAD.NewsFeedFragment;
 import com.example.candor.youthapp.MAP.MapsActivity;
 import com.example.candor.youthapp.MAP.UserLocation;
 import com.example.candor.youthapp.NotificationFragment.NotificationFragment;
@@ -29,9 +31,6 @@ import com.firebase.ui.auth.ErrorCodes;
 import com.firebase.ui.auth.IdpResponse;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.model.CameraPosition;
-import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -78,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
     private CommunicationFragment mCommunicationFragment;
     private ProfileFragment mProfileFragment;
     private NotificationFragment mNotificationFragment;
+    private NewsFeedFragment mNewsFeedFragment;;
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    setFragment(mHomeFragment);
+                    setFragment(mNewsFeedFragment);
                     return true;
                 case R.id.navigation_explore:
                     setFragment(mCommunicationFragment);
@@ -102,10 +102,6 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_profile:
                     setFragment(mProfileFragment);
-                    /*Intent profileIntent = new Intent(MainActivity.this , ProfileActivity.class);
-                    profileIntent.putExtra("userID" , mUserID);
-                    startActivity(profileIntent);*/
-                    //setFragment(mProfileFragment);
                     return true;
             }
             return false;
@@ -135,11 +131,18 @@ public class MainActivity extends AppCompatActivity {
 
 
         // ----------- GETTING FRAGMENTS ---//
-        mHomeFragment = new HomeFragment();
-        setFragment(mHomeFragment);
+       // mHomeFragment = new HomeFragment();
         mProfileFragment = new ProfileFragment();
         mNotificationFragment = new NotificationFragment();
         mCommunicationFragment = new CommunicationFragment();
+        mNewsFeedFragment = new NewsFeedFragment();
+        setFragment(mNewsFeedFragment);
+
+
+        //---------- CHECKING THE PERMISSION FOR LOCATION ----//
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ) {
+            checkPermission();
+        }
 
         //-------- CHECKING AUTH STATE -------//
         mAuth = FirebaseAuth.getInstance();
@@ -188,7 +191,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onSuccess(Location location) {
                         // Got last known location. In some rare situations this can be null.
                         if (location != null) {
-                            UserLocation mUserLocation = new UserLocation(location.getLatitude() , location.getLongitude() , mUserID);
+                            String userName = mUserName;
+                            UserLocation mUserLocation = new UserLocation(location.getLatitude() , location.getLongitude() , mUserID, userName);
                             mRootRef.child("map_locations").child(mUserID).setValue(mUserLocation);
                         }
                     }
@@ -292,6 +296,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+
         mAuth.addAuthStateListener(mAuthStateListener);
     }
 
@@ -299,5 +304,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         mAuth.removeAuthStateListener(mAuthStateListener);
+    }
+
+    public void checkPermission(){
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                ){//Can add more as per requirement
+
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION},
+                    123);
+        }
     }
 }
