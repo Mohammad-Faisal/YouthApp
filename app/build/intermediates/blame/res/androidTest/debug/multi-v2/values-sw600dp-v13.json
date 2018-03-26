@@ -4,23 +4,6 @@
             "outputFile": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,124",
-                        "endColumns": "68,68",
-                        "endOffsets": "119,188"
-                    },
-                    "to": {
-                        "startLines": "18,19",
-                        "startColumns": "4,4",
-                        "startOffsets": "1170,1239",
-                        "endColumns": "68,68",
-                        "endOffsets": "1234,1303"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -41,12 +24,12 @@
                         "endOffsets": "110,180,251,323,381,439,545,609,672,854"
                     },
                     "to": {
-                        "startLines": "10,11,12,13,14,15,16,17,20,21",
+                        "startLines": "10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "611,671,741,812,884,942,1000,1106,1308,1371",
-                        "endLines": "10,11,12,13,14,15,16,17,20,24",
+                        "startOffsets": "611,671,741,812,884,942,1000,1106,1170,1233",
+                        "endLines": "10,11,12,13,14,15,16,17,18,22",
                         "endColumns": "59,69,70,71,57,57,105,63,62,12",
-                        "endOffsets": "666,736,807,879,937,995,1101,1165,1366,1548"
+                        "endOffsets": "666,736,807,879,937,995,1101,1165,1228,1410"
                     }
                 }
             ]

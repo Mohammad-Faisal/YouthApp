@@ -69,5 +69,4 @@
     <string name="fui_welcome_back_idp_header" translation_description="Inline subtitle to users whose signup was interrupted since an existing account was detected">You already have an account</string>
     <string name="fui_welcome_back_idp_prompt" translation_description="Message to users that need to signin using existing IDP accounts">You\'ve already used %1$s. Sign in with %2$s to continue.</string>
     <string name="fui_welcome_back_password_prompt_body" translation_description="Message to users that need to signin using existing email accounts">You\'ve already used %1$s to sign in. Enter your password for that account.</string>
-    <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Buy with Google"</string>
 </resources>

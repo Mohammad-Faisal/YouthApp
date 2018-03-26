@@ -4,25 +4,6 @@
             "outputFile": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-appinvite-11.0.4.aar\\6f71158b074fa9405752e41aa66c56d2\\res\\values-v11\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "172",
-                        "endLines": "5",
-                        "endColumns": "8",
-                        "endOffsets": "293"
-                    },
-                    "to": {
-                        "startLines": "192",
-                        "startColumns": "4",
-                        "startOffsets": "14077",
-                        "endLines": "193",
-                        "endColumns": "8",
-                        "endOffsets": "14198"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
