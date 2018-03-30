@@ -15,12 +15,9 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.candor.youthapp.GENERAL.MainActivity;
-import com.example.candor.youthapp.HOME.BLOG.CreateBlogActivity;
 import com.example.candor.youthapp.HOME.POST.CREATE_SHOW.CreatePostActivity;
 import com.example.candor.youthapp.HOME.POST.CREATE_SHOW.Posts;
 import com.example.candor.youthapp.R;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -125,7 +122,6 @@ public class NewsFeedFragment extends Fragment {
         });
         return view;
     }
-
 
     private void initial_load_from_net()
     {

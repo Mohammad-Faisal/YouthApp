@@ -32,13 +32,9 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
 
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this , getString(R.string.default_notification_channel_id))
-                        .setSmallIcon(R.drawable.cast_ic_notification_small_icon)
+                        .setSmallIcon(R.drawable.ic_bio_icon)
                         .setContentTitle(messageTitle)
                         .setContentText(messageBody);
-
-
-
-
 
 
         Intent resultIntent = new Intent(click_action);

@@ -19,7 +19,6 @@ import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import com.example.candor.youthapp.COMMUNICATE.CommunicationFragment;
-import com.example.candor.youthapp.HOME.HomeFragment;
 import com.example.candor.youthapp.HOME.POST.LOAD.NewsFeedFragment;
 import com.example.candor.youthapp.MAP.MapsActivity;
 import com.example.candor.youthapp.MAP.UserLocation;
@@ -46,12 +45,12 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import me.leolin.shortcutbadger.ShortcutBadger;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
     private static final int RC_SIGN_IN = 1;
+    private static final int RC_CHECK_PERMISSION_LOCATION = 2;
 
 
     public static String mUserID = "";
@@ -73,11 +72,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     //------- FRAGMENTS ----//
-    private HomeFragment mHomeFragment;
     private CommunicationFragment mCommunicationFragment;
     private ProfileFragment mProfileFragment;
     private NotificationFragment mNotificationFragment;
-    private NewsFeedFragment mNewsFeedFragment;;
+    private NewsFeedFragment mNewsFeedFragment;
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -97,7 +95,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(mapsIntent);
                     return true;
                 case R.id.navigation_notifications:
-                    ShortcutBadger.removeCount(MainActivity.this);
                     setFragment(mNotificationFragment);
                     return true;
                 case R.id.navigation_profile:
@@ -117,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -128,23 +126,8 @@ public class MainActivity extends AppCompatActivity {
         //------------ FRAME LAYOUT ----------------//
         mFrameHome = findViewById(R.id.frame_layout_navigation_home);
 
+        initializeFragments();
 
-
-        // ----------- GETTING FRAGMENTS ---//
-       // mHomeFragment = new HomeFragment();
-        mProfileFragment = new ProfileFragment();
-        mNotificationFragment = new NotificationFragment();
-        mCommunicationFragment = new CommunicationFragment();
-        mNewsFeedFragment = new NewsFeedFragment();
-        setFragment(mNewsFeedFragment);
-
-
-        //---------- CHECKING THE PERMISSION FOR LOCATION ----//
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ) {
-            checkPermission();
-        }
-
-        //-------- CHECKING AUTH STATE -------//
         mAuth = FirebaseAuth.getInstance();
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -152,6 +135,16 @@ public class MainActivity extends AppCompatActivity {
                 final FirebaseUser mUser = firebaseAuth.getCurrentUser();
                 if (mUser != null) {
                     mUserID = mUser.getUid();
+                    //int badgeCount = 1;
+                    //ShortcutBadger.applyCount(MainActivity.this, badgeCount); //for 1.1.4+
+                    //ShortcutBadger.with(getApplicationContext()).count(badgeCount);
+
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ) {
+                        checkPermission();
+                    }
+
+                    setFragment(mNewsFeedFragment);
+
                 } else {
                     //user is not signed in
                     startActivityForResult(
@@ -166,24 +159,41 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         };
-        int badgeCount = 1;
-        ShortcutBadger.applyCount(MainActivity.this, badgeCount); //for 1.1.4+
-        //ShortcutBadger.with(getApplicationContext()).count(badgeCount);
+
+    }
+
+    private void initializeFragments(){
+
+        // ----------- GETTING FRAGMENTS ---//
+        mProfileFragment = new ProfileFragment();
+        mNotificationFragment = new NotificationFragment();
+        mCommunicationFragment = new CommunicationFragment();
+        mNewsFeedFragment = new NewsFeedFragment();
+
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.add(R.id.frame_layout_navigation_home, mProfileFragment);
+        fragmentTransaction.add(R.id.frame_layout_navigation_home, mCommunicationFragment);
+        fragmentTransaction.add(R.id.frame_layout_navigation_home , mNotificationFragment);
+        //fragmentTransaction.add(R.id.frame_layout_navigation_home , mHomeFragment);
+        fragmentTransaction.add(R.id.frame_layout_navigation_home , mNewsFeedFragment);
+
+
+        fragmentTransaction.hide(mProfileFragment);
+        fragmentTransaction.hide(mCommunicationFragment);
+        fragmentTransaction.hide(mNotificationFragment);
 
 
 
-        FusedLocationProviderClient mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
+    }
+
+
+
+    void setLocation() {
+        //-------- CHECKING AUTH STATE -------//
+        final FusedLocationProviderClient mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         final DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            //  return;
         }
         mFusedLocationClient.getLastLocation()
                 .addOnSuccessListener(this, new OnSuccessListener<Location>() {
@@ -194,11 +204,10 @@ public class MainActivity extends AppCompatActivity {
                             String userName = mUserName;
                             UserLocation mUserLocation = new UserLocation(location.getLatitude() , location.getLongitude() , mUserID, userName);
                             mRootRef.child("map_locations").child(mUserID).setValue(mUserLocation);
+                            setFragment(mNewsFeedFragment);
                         }
                     }
                 });
-
-
     }
 
 
@@ -246,8 +255,6 @@ public class MainActivity extends AppCompatActivity {
                                 hashMap.put("bio" , "default");
                                 hashMap.put("location" , "location");
 
-
-
                                 mFirebaseDatabase.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
@@ -291,12 +298,14 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "unknown sign in response", Toast.LENGTH_SHORT).show();
             }
         }
+        else if(requestCode == RC_CHECK_PERMISSION_LOCATION){
+            setLocation();
+        }
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-
         mAuth.addAuthStateListener(mAuthStateListener);
     }
 
@@ -313,7 +322,8 @@ public class MainActivity extends AppCompatActivity {
 
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION},
-                    123);
+                    RC_CHECK_PERMISSION_LOCATION);
+
         }
     }
 }

@@ -1,10 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ru-rRU\\values-ru-rRU.xml",
+            "outputFile": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru-rRU/values-ru-rRU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\android-image-cropper-2.5.1.aar\\af52148421079c402bdbaa1a093a62c6\\res\\values-ru-rRU\\values-ru-rRU.xml",
+                    "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/538f18675ce0fed91e1d8436d712dd7c/res/values-ru-rRU/values-ru-rRU.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,171,257,339,412,487",
+                        "endColumns": "57,57,85,81,72,74,76",
+                        "endOffsets": "108,166,252,334,407,482,559"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ru-rRU\\values-ru-rRU.xml",
+            "map": [
+                {
+                    "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\android-image-cropper-2.5.1.aar\\af52148421079c402bdbaa1a093a62c6\\res\\values-ru-rRU\\values-ru-rRU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

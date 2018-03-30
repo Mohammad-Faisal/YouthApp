@@ -63,9 +63,6 @@ dependencies {
     compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.2'
 
 
-    //badges
-    compile "me.leolin:ShortcutBadger:1.1.21@aar"
-
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 
     //firebase
