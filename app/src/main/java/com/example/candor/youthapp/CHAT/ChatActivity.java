@@ -15,10 +15,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.candor.youthapp.R;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
@@ -103,7 +101,7 @@ public class ChatActivity extends AppCompatActivity {
 
 
         //----------  LOADING MESSAGES INTO RECYCLER VIEW --------- //
-        mMessageAdapter = new MessageAdapter(messageList);
+        mMessageAdapter = new MessageAdapter(messageList , this);
         mMessageList = findViewById(R.id.message_list);
         mLinearLayout = new LinearLayoutManager(this);
         mMessageList.hasFixedSize();
@@ -157,7 +155,7 @@ public class ChatActivity extends AppCompatActivity {
                 else{
                     GetTimeAgo ob = new GetTimeAgo();
                     long time = Long.parseLong(online);
-                    String time_ago = ob.getTimeAgo(time , getApplicationContext());
+                    String time_ago = GetTimeAgo.getTimeAgo(time , getApplicationContext());
                     //mLastSeen.setText("last seen " + time_ago);
                 }
                 mDisplayName.setText(mOtherUserName);

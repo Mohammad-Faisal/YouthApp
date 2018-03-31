@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    setFragment(mNewsFeedFragment);
+                    setFragment(mNotificationFragment);
                     return true;
                 case R.id.navigation_explore:
                     setFragment(mCommunicationFragment);
@@ -114,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -125,7 +124,6 @@ public class MainActivity extends AppCompatActivity {
         mNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         //------------ FRAME LAYOUT ----------------//
         mFrameHome = findViewById(R.id.frame_layout_navigation_home);
-
         initializeFragments();
 
         mAuth = FirebaseAuth.getInstance();
@@ -135,16 +133,9 @@ public class MainActivity extends AppCompatActivity {
                 final FirebaseUser mUser = firebaseAuth.getCurrentUser();
                 if (mUser != null) {
                     mUserID = mUser.getUid();
-                    //int badgeCount = 1;
-                    //ShortcutBadger.applyCount(MainActivity.this, badgeCount); //for 1.1.4+
-                    //ShortcutBadger.with(getApplicationContext()).count(badgeCount);
-
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ) {
                         checkPermission();
                     }
-
-                    setFragment(mNewsFeedFragment);
-
                 } else {
                     //user is not signed in
                     startActivityForResult(
@@ -174,20 +165,17 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.add(R.id.frame_layout_navigation_home, mProfileFragment);
         fragmentTransaction.add(R.id.frame_layout_navigation_home, mCommunicationFragment);
         fragmentTransaction.add(R.id.frame_layout_navigation_home , mNotificationFragment);
-        //fragmentTransaction.add(R.id.frame_layout_navigation_home , mHomeFragment);
         fragmentTransaction.add(R.id.frame_layout_navigation_home , mNewsFeedFragment);
 
 
         fragmentTransaction.hide(mProfileFragment);
         fragmentTransaction.hide(mCommunicationFragment);
         fragmentTransaction.hide(mNotificationFragment);
+        fragmentTransaction.hide(mNewsFeedFragment);
 
 
-
-
+        setFragment(mNewsFeedFragment);
     }
-
-
 
     void setLocation() {
         //-------- CHECKING AUTH STATE -------//
@@ -204,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
                             String userName = mUserName;
                             UserLocation mUserLocation = new UserLocation(location.getLatitude() , location.getLongitude() , mUserID, userName);
                             mRootRef.child("map_locations").child(mUserID).setValue(mUserLocation);
-                            setFragment(mNewsFeedFragment);
+                            //setFragment(mNewsFeedFragment);
                         }
                     }
                 });
@@ -222,13 +210,10 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK && response!=null) {
                 mUserID = response.getIdpToken();
 
-
                 FirebaseUser mUser = mAuth.getCurrentUser();
                 if(mUser!=null)
                 {
-
                     mUserID = mAuth.getCurrentUser().getUid();
-                    //if an user is logged in for the first time i am inserting some default information about him
                     DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference().child("users");
                     rootRef.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override

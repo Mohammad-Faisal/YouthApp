@@ -3,9 +3,9 @@ package com.example.candor.youthapp.COMMUNICATE.MEETINGS;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -15,7 +15,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.candor.youthapp.GENERAL.MainActivity;
-import com.example.candor.youthapp.HOME.POST.CREATE_SHOW.CreatePostActivity;
 import com.example.candor.youthapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -59,8 +58,7 @@ public class CreateMeetingActivity extends AppCompatActivity {
 
         //------widgets----
         mTitleText = findViewById(R.id.create_meeting_title_text);
-        mDetailsText = findViewById(R.id.create_meeting_details_text);
-        mTags = findViewById(R.id.create_meeting_tags_text);
+        //mTags = findViewById(R.id.create_meeting_tags_text);
         mCreateChatRoomButton = findViewById(R.id.create_meeting_button);
         mCreateMeetingImage = findViewById(R.id.create_meeting_image);
         progressBar = findViewById(R.id.progress_bar);
@@ -91,20 +89,16 @@ public class CreateMeetingActivity extends AppCompatActivity {
         mCreateChatRoomButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 mMeetingId = mMeetingsRef.push().getKey();
-                details = mDetailsText.getText().toString();
+                details = "no details";
                 title = mTitleText.getText().toString();
-                tag = mTags.getText().toString();
+                tag = "default";
                 if(image_download_url!=null){
                     mMeetingImageUrl = image_download_url;
                 }else{
                     mMeetingImageUrl = "default";
                 }
-
-
                 final MeetingRooms meetingRooms = new MeetingRooms(title , type , details , tag ,moderator , mUserID , mMeetingId , "0" , mMeetingImageUrl);
-
 
                 mMeetingsRef.child(mMeetingId).setValue(meetingRooms).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

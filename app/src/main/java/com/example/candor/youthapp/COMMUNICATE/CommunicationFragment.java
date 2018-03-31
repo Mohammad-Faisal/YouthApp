@@ -1,9 +1,6 @@
 package com.example.candor.youthapp.COMMUNICATE;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
-import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
@@ -14,21 +11,13 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.example.candor.youthapp.COMMUNICATE.CHATS.ChatsFragment;
-import com.example.candor.youthapp.COMMUNICATE.LEADERS.LeadersFragment;
 import com.example.candor.youthapp.COMMUNICATE.MEETINGS.CreateMeetingActivity;
 import com.example.candor.youthapp.COMMUNICATE.MEETINGS.MeetingFragment;
 import com.example.candor.youthapp.GENERAL.MainActivity;
-import com.example.candor.youthapp.HOME.BLOG.BlogFragment;
 import com.example.candor.youthapp.HOME.BLOG.CreateBlogActivity;
-import com.example.candor.youthapp.HOME.POST.CREATE_SHOW.CreatePostActivity;
-import com.example.candor.youthapp.HOME.POST.LOAD.NewsFeedFragment;
-import com.example.candor.youthapp.HOME.RankingFragment;
 import com.example.candor.youthapp.R;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -123,9 +112,11 @@ public class CommunicationFragment extends Fragment {
                 int position = tab.getPosition();
                 if(position == 0){
                     mCommunicationFragmentFloating.setBackgroundResource(R.drawable.ic_add_icon);
+                    mCommunicationFragmentFloating.setVisibility(View.GONE);
                     tab_position = 0;
                 } else if(position == 1){
                     mCommunicationFragmentFloating.setBackgroundResource(R.drawable.ic_search_icon);
+                    mCommunicationFragmentFloating.setVisibility(View.VISIBLE);
                     tab_position = 1;
                 }else{
                     mCommunicationFragmentFloating.setBackgroundResource(R.drawable.ic_add_icon);

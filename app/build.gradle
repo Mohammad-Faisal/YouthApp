@@ -28,6 +28,10 @@ android {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/NOTICE'
     }
+
+    dataBinding{
+        enabled true
+    }
 }
 
 dependencies {
@@ -61,6 +65,8 @@ dependencies {
     //for offline support in picasso
     compile 'com.squareup.okhttp3:okhttp:3.9.1'
     compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.2'
+
+    compile 'com.miguelcatalan:materialsearchview:1.4.0'
 
 
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'

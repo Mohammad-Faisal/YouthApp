@@ -4,6 +4,10 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_suggestion.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxhdpi/ic_suggestion.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
     },
@@ -28,12 +32,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxxhdpi-v4\\quantum_ic_replay_30_white_24.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mr_group_expand.xml.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable\\mr_group_expand.xml"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_plusone_medium_off_client.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.0.4.aar\\a9988ccc17412a3439ce9665cbe09d39\\res\\drawable-mdpi-v4\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mr_group_expand.xml.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable\\mr_group_expand.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -80,12 +84,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-xxhdpi/ic_love_empty.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_stop_grey600_48.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxhdpi-v4\\quantum_ic_stop_grey600_48.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_replay_white_24.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_white_24.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_stop_grey600_48.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxhdpi-v4\\quantum_ic_stop_grey600_48.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_11_dark.png.flat",
@@ -120,12 +124,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_19_dark.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/anim_abc_fade_in.xml.flat",
-        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/anim/abc_fade_in.xml"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_skip_next_grey600_36.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-mdpi-v4\\quantum_ic_skip_next_grey600_36.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/anim_abc_fade_in.xml.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/anim/abc_fade_in.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_email_icon.png.flat",
@@ -164,12 +168,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xhdpi-v4\\quantum_ic_play_arrow_white_24.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_skip_ad_label_border.xml.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable\\cast_skip_ad_label_border.xml"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_skip_ad_label_border.xml.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable\\cast_skip_ad_label_border.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
@@ -216,6 +220,10 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_navigation_arrow_back_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxhdpi/ic_action_navigation_arrow_back_inverted.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_design_text_input_password_icon.xml.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ec1f3cb3040a9ac46e05562b3f38cb75/res/layout/design_text_input_password_icon.xml"
     },
@@ -232,12 +240,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.0.4.aar\\50027c10c1c476529a45863ea862dc30\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu_item.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\69c2b7f67bebb97437b2a1fd3a68e649\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-v21_avd_show_password.xml.flat",
@@ -248,12 +256,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\69c2b7f67bebb97437b2a1fd3a68e649\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_dgts_country_row.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-2.3.0.aar\\0339f17859f7aa0bed4adbb6fec3dc1c\\res\\layout\\fui_dgts_country_row.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_expanded_controller_bg_gradient_light.xml.flat",
@@ -284,12 +292,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/anim_design_snackbar_in.xml.flat",
-        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ec1f3cb3040a9ac46e05562b3f38cb75/res/anim/design_snackbar_in.xml"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_confirmation_code_layout.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-2.3.0.aar\\0339f17859f7aa0bed4adbb6fec3dc1c\\res\\layout\\fui_confirmation_code_layout.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/anim_design_snackbar_in.xml.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ec1f3cb3040a9ac46e05562b3f38cb75/res/anim/design_snackbar_in.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_explore_grey.png.flat",
@@ -336,12 +344,12 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-hdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_mr_playback_control.xml.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\layout\\mr_playback_control.xml"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_explore_grey.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-xxhdpi/ic_explore_grey.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_mr_playback_control.xml.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\layout\\mr_playback_control.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_create_blog.xml.flat",
@@ -520,12 +528,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_10_dark.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_powered_by_google_light.png.flat",
@@ -548,12 +556,12 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/android-image-cropper-2.5.1.aar/538f18675ce0fed91e1d8436d712dd7c/res/drawable-xhdpi-v4/crop_image_menu_rotate_right.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_location_grey.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_location_grey.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_cast_ic_notification_1.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-11.0.4.aar\\341a2ba842cbaa76eb25fd9ea174d26b\\res\\drawable-xxhdpi-v4\\cast_ic_notification_1.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_location_grey.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_location_grey.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_forward_30_grey600_36.png.flat",
@@ -568,28 +576,32 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_00_light.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_06_light.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_light.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_replay_white_24.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxxhdpi-v4\\quantum_ic_replay_white_24.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_06_light.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_light.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_home_grey.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-xhdpi/ic_home_grey.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_voice_search_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-hdpi/ic_action_voice_search_inverted.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_add_icon.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-mdpi/ic_add_icon.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_add_icon.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-mdpi/ic_add_icon.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -604,12 +616,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\font\\nunito_extralight.ttf"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_expand_14.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxxhdpi-v4\\ic_group_expand_14.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_expand_14.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxxhdpi-v4\\ic_group_expand_14.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_13_light.png.flat",
@@ -628,12 +640,12 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6ab84413b84675f22fdba33e5892a228/res/drawable-mdpi-v4/notification_bg_normal.9.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_home_grey.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-hdpi/ic_home_grey.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_abc_screen_content_include.xml.flat",
@@ -672,12 +684,12 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ec1f3cb3040a9ac46e05562b3f38cb75/res/anim/design_snackbar_out.xml"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_ic_notification_stop_live_stream.xml.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable\\cast_ic_notification_stop_live_stream.xml"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_ic_notification_stop_live_stream.xml.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable\\cast_ic_notification_stop_live_stream.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_stop_grey600_48.png.flat",
@@ -708,12 +720,16 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/f770b1622a8c54052354bdc8ff310fdb/res/layout/notification_template_big_media_custom.xml"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_crop_image_menu_rotate_left.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\android-image-cropper-2.5.1.aar\\af52148421079c402bdbaa1a093a62c6\\res\\drawable-xxxhdpi-v4\\crop_image_menu_rotate_left.png"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_suggestion.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxxhdpi/ic_suggestion.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_crop_image_menu_rotate_left.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\android-image-cropper-2.5.1.aar\\af52148421079c402bdbaa1a093a62c6\\res\\drawable-xxxhdpi-v4\\crop_image_menu_rotate_left.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -736,24 +752,24 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-2.3.0.aar\\0339f17859f7aa0bed4adbb6fec3dc1c\\res\\layout\\fui_phone_layout.xml"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
-    },
-    {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view_list_item.xml.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_cast_ic_notification_0.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-11.0.4.aar\\341a2ba842cbaa76eb25fd9ea174d26b\\res\\drawable-hdpi-v4\\cast_ic_notification_0.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view_list_item.xml.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_crop_image_activity.xml.flat",
@@ -832,12 +848,16 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable/abc_item_background_holo_light.xml"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13_design_layout_snackbar.xml.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\69c2b7f67bebb97437b2a1fd3a68e649\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13_design_layout_snackbar.xml.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\69c2b7f67bebb97437b2a1fd3a68e649\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_action_navigation_arrow_back_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxxhdpi/ic_action_navigation_arrow_back_inverted.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_replay_10_white_24.png.flat",
@@ -868,12 +888,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-hdpi-v4\\quantum_ic_skip_next_white_36.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/color_abc_tint_switch_track.xml.flat",
-        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/color/abc_tint_switch_track.xml"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_bigtop_updates_white_24.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/color_abc_tint_switch_track.xml.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/color/abc_tint_switch_track.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_22_light.png.flat",
@@ -1008,20 +1028,20 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-hdpi-v4\\quantum_ic_play_circle_filled_grey600_36.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
-        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-xhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_expand_15.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxxhdpi-v4\\ic_group_expand_15.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-xhdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_expand_15.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxxhdpi-v4\\ic_group_expand_15.png"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-xhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1056,12 +1076,12 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_out.xml.flat",
-        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ec1f3cb3040a9ac46e05562b3f38cb75/res/anim-v21/design_bottom_sheet_slide_out.xml"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_abc_dialog_title_material.xml.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_out.xml.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ec1f3cb3040a9ac46e05562b3f38cb75/res/anim-v21/design_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple.xml.flat",
@@ -1072,12 +1092,12 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_person_grey.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-hdpi/ic_person_grey.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_amu_bubble_shadow.9.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\ccd52e7d007f8af65d143f00fc5f85de\\res\\drawable-xhdpi-v4\\amu_bubble_shadow.9.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_person_grey.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-hdpi/ic_person_grey.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_person_icon.png.flat",
@@ -1196,32 +1216,36 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-2.3.0.aar\\0339f17859f7aa0bed4adbb6fec3dc1c\\res\\drawable\\fui_ic_facebook_white_22dp.xml"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_navigation_close_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxhdpi/ic_action_navigation_close_inverted.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_bio_icon.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-hdpi/ic_bio_icon.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_10_dark.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_10_dark.png"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_bigtop_updates_white_24.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxxhdpi-v4\\quantum_ic_bigtop_updates_white_24.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_skip_next_grey600_36.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xhdpi-v4\\quantum_ic_skip_next_grey600_36.png"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_10_dark.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_10_dark.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_plusone_small_off_client.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.0.4.aar\\a9988ccc17412a3439ce9665cbe09d39\\res\\drawable-xxhdpi-v4\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_skip_next_grey600_36.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xhdpi-v4\\quantum_ic_skip_next_grey600_36.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_fui_register_email_layout.xml.flat",
@@ -1236,12 +1260,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_cast_tracks_chooser_dialog_layout.xml.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\layout\\cast_tracks_chooser_dialog_layout.xml"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_cast_tracks_chooser_dialog_layout.xml.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\layout\\cast_tracks_chooser_dialog_layout.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_forward_30_white_36.png.flat",
@@ -1348,12 +1372,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_09_dark.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/color_abc_tint_default.xml.flat",
-        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/color/abc_tint_default.xml"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_audiotrack_light.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-mdpi-v4\\ic_audiotrack_light.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/color_abc_tint_default.xml.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/color/abc_tint_default.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_ranking.xml.flat",
@@ -1408,16 +1432,20 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-11.0.4.aar\\341a2ba842cbaa76eb25fd9ea174d26b\\res\\drawable-mdpi-v4\\cast_ic_notification_on.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_explore_grey.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-xxhdpi\\ic_explore_grey.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_replay_30_white_24.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-mdpi-v4\\quantum_ic_replay_30_white_24.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_navigation_arrow_back_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xhdpi/ic_action_navigation_arrow_back_inverted.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_mr_button_disabled_light.png.flat",
@@ -1448,12 +1476,20 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_suggestion.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xhdpi/ic_suggestion.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_06_dark.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_06_dark.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_activity_register_email.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-ui-auth-2.3.0.aar\\0339f17859f7aa0bed4adbb6fec3dc1c\\res\\layout\\fui_activity_register_email.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_action_navigation_close.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxxhdpi/ic_action_navigation_close.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1500,12 +1536,12 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-2.3.0.aar/c02162316787b2ec4e1f543958104d34/res/layout/fui_idp_button_facebook.xml"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_date_icon.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-hdpi\\ic_date_icon.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\69c2b7f67bebb97437b2a1fd3a68e649\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_date_icon.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-hdpi\\ic_date_icon.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_audiotrack_dark.png.flat",
@@ -1688,12 +1724,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_comment_icon.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_comment_icon.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_14_light.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_14_light.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_comment_icon.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_comment_icon.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_disabled_color_18.png.flat",
@@ -1714,6 +1750,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_replay_white_24.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-hdpi-v4\\quantum_ic_replay_white_24.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_navigation_close_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-mdpi/ic_action_navigation_close_inverted.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -1752,12 +1792,12 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_05_light.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_05_light.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/6ab84413b84675f22fdba33e5892a228/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_05_light.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_05_light.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_15_dark.png.flat",
@@ -1808,12 +1848,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_volume_up_grey600_36.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxhdpi-v4\\quantum_ic_volume_up_grey600_36.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_forward_30_white_24.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-mdpi-v4\\quantum_ic_forward_30_white_24.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_volume_up_grey600_36.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxhdpi-v4\\quantum_ic_volume_up_grey600_36.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1824,28 +1864,32 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_likers.xml.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\layout\\activity_likers.xml"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_play_circle_filled_grey600_36.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxhdpi-v4\\quantum_ic_play_circle_filled_grey600_36.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_love_empty.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-mdpi/ic_love_empty.png"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_likers.xml.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\layout\\activity_likers.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_love_empty.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-mdpi/ic_love_empty.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/d3c614065f9f7c3999719937f53756ac/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_voice_search_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xhdpi/ic_action_voice_search_inverted.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_powered_by_google_light.png.flat",
@@ -1884,16 +1928,16 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/layout/fragment_leaders.xml"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_dark.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_08_dark.png.flat",
@@ -2012,12 +2056,12 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\e9f3a21298248c3205f87dc00790e9a1\\res\\layout\\notification_template_big_media_custom.xml"
     },
     {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_18_dark.png.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_18_dark.png"
-    },
-    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_amu_text_bubble.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\ccd52e7d007f8af65d143f00fc5f85de\\res\\layout\\amu_text_bubble.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_18_dark.png.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_18_dark.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
@@ -2200,8 +2244,16 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable_color_cursor_white.xml.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable/color_cursor_white.xml"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_play_arrow_white_24.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-mdpi-v4\\quantum_ic_play_arrow_white_24.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_suggestion.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-hdpi/ic_suggestion.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_meeting_room_single.xml.flat",
@@ -2334,6 +2386,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_navigation_close.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxhdpi/ic_action_navigation_close.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -2736,6 +2792,10 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-xxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_navigation_close.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-mdpi/ic_action_navigation_close.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_love_full.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-xxhdpi/ic_love_full.png"
     },
@@ -2766,6 +2826,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-v21_fui_idp_button_background_phone.xml.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-2.3.0.aar/c02162316787b2ec4e1f543958104d34/res/drawable-v21/fui_idp_button_background_phone.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_voice_search.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxhdpi/ic_action_voice_search.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_volume_off_white_36.png.flat",
@@ -2912,6 +2976,10 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_search_icon.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_voice_search_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxhdpi/ic_action_voice_search_inverted.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_navigation_item.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\69c2b7f67bebb97437b2a1fd3a68e649\\res\\layout\\design_bottom_navigation_item.xml"
     },
@@ -2998,6 +3066,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_collapse_07.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_07.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_action_search.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-mdpi/ic_action_action_search.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_person_icon.png.flat",
@@ -3464,6 +3536,14 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable-hdpi/ic_action_name.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_action_navigation_arrow_back.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxxhdpi/ic_action_navigation_arrow_back.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_navigation_arrow_back_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-hdpi/ic_action_navigation_arrow_back_inverted.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout-land_fui_auth_method_picker_layout.xml.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-2.3.0.aar/c02162316787b2ec4e1f543958104d34/res/layout-land/fui_auth_method_picker_layout.xml"
     },
@@ -3510,10 +3590,6 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
-    },
-    {
-        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_fragment_ranking.xml.flat",
-        "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/layout/fragment_ranking.xml"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -3602,6 +3678,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_voice_search.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xhdpi/ic_action_voice_search.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -3770,6 +3850,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_pause_grey600_48.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xxxhdpi-v4\\quantum_ic_pause_grey600_48.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_navigation_close.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xhdpi/ic_action_navigation_close.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_mr_button_disconnected_dark.png.flat",
@@ -4072,6 +4156,10 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\69c2b7f67bebb97437b2a1fd3a68e649\\res\\drawable-xxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_search_view.xml.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/layout/search_view.xml"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_design_navigation_item_subheader.xml.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ec1f3cb3040a9ac46e05562b3f38cb75/res/layout/design_navigation_item_subheader.xml"
     },
@@ -4360,6 +4448,10 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/d3c614065f9f7c3999719937f53756ac/res/drawable/common_google_signin_btn_icon_light_normal.xml"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_action_search.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxhdpi/ic_action_action_search.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
     },
@@ -4532,6 +4624,10 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable\\cast_ic_expanded_controller_pause.xml"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_search_people_toolbar.xml.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/layout/search_people_toolbar.xml"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
@@ -4554,6 +4650,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_tick_mark_material.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_action_voice_search.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxxhdpi/ic_action_voice_search.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -4632,6 +4732,10 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/drawable/ic_notifications_black_24dp.xml"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_action_action_search.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxxhdpi/ic_action_action_search.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
@@ -4692,6 +4796,14 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_navigation_close_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-hdpi/ic_action_navigation_close_inverted.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/menu_menu_search_people.xml.flat",
+        "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/menu/menu_search_people.xml"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_select_dialog_material.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\layout\\abc_select_dialog_material.xml"
     },
@@ -4726,6 +4838,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_08_dark.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_08_dark.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_navigation_arrow_back.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xhdpi/ic_action_navigation_arrow_back.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_forward_10_white_24.png.flat",
@@ -5240,6 +5356,10 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_action_voice_search_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxxhdpi/ic_action_voice_search_inverted.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_quantum_ic_skip_previous_grey600_36.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable-xhdpi-v4\\quantum_ic_skip_previous_grey600_36.png"
     },
@@ -5432,6 +5552,10 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-hdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_navigation_close_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xhdpi/ic_action_navigation_close_inverted.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_switch_track.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\color\\abc_tint_switch_track.xml"
     },
@@ -5450,6 +5574,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_item_comment.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/app/src/main/res/layout/item_comment.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_voice_search.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-hdpi/ic_action_voice_search.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_09_light.png.flat",
@@ -5730,6 +5858,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_media_pause_dark.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-hdpi-v4\\ic_media_pause_dark.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_navigation_arrow_back.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-mdpi/ic_action_navigation_arrow_back.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_love_empty.png.flat",
@@ -6040,6 +6172,10 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_03_light.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_suggest_item.xml.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/layout/suggest_item.xml"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
@@ -6130,6 +6266,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_grow_fade_in_from_bottom.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_voice_search_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-mdpi/ic_action_voice_search_inverted.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_bio_icon.png.flat",
@@ -6258,6 +6398,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_00_dark.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_00_dark.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_navigation_close.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-hdpi/ic_action_navigation_close.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_fui_slide_out_left.xml.flat",
@@ -6716,6 +6860,10 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\ccd52e7d007f8af65d143f00fc5f85de\\res\\raw\\amu_basic_placemark.kml"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_suggestion.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-mdpi/ic_suggestion.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_14_dark.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_14_dark.png"
     },
@@ -6776,6 +6924,10 @@
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_action_navigation_close_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxxhdpi/ic_action_navigation_close_inverted.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
     },
@@ -6786,6 +6938,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-xxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_action_search.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-hdpi/ic_action_action_search.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -7044,6 +7200,10 @@
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_voice_search.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-mdpi/ic_action_voice_search.png"
+    },
+    {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/ecfde3f3c738203ee916487547a20a43/res/drawable-xhdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
@@ -7078,6 +7238,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\07e064eedf3702c78b78f69247728978\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_action_navigation_arrow_back.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-hdpi/ic_action_navigation_arrow_back.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -7166,6 +7330,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_11_dark.png.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\e2f487ed53a5803498e2f9375b98e3b2\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_11_dark.png"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_navigation_arrow_back.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xxhdpi/ic_action_navigation_arrow_back.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -7382,6 +7550,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_show_password.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\69c2b7f67bebb97437b2a1fd3a68e649\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_action_navigation_arrow_back_inverted.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-mdpi/ic_action_navigation_arrow_back_inverted.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_disabled_dark.png.flat",
@@ -7730,6 +7902,10 @@
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\Desktop\\YouthApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cast_ic_notification_rewind30.xml.flat",
         "source": "/home/faisal/AndroidStudioProjects/YouthApp/C:\\Users\\Mohammad Faisal\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.4.aar\\2975c21eb982eed45aa3d80c1cc27256\\res\\drawable\\cast_ic_notification_rewind30.xml"
+    },
+    {
+        "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_action_action_search.png.flat",
+        "source": "/home/faisal/.gradle/caches/transforms-1/files-1.1/materialsearchview-1.4.0.aar/488a8ea7556cbde9aadd83561d65a15c/res/drawable-xhdpi/ic_action_action_search.png"
     },
     {
         "merged": "/home/faisal/AndroidStudioProjects/YouthApp/app/build/intermediates/res/merged/debug/layout_activity_show_post.xml.flat",

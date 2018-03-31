@@ -2,41 +2,31 @@ package com.example.candor.youthapp.COMMUNICATE.MEETINGS;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.candor.youthapp.CHAT.ChatActivity;
-import com.example.candor.youthapp.CHAT.ChatBuddies;
-import com.example.candor.youthapp.COMMUNICATE.CHATS.Actives;
 import com.example.candor.youthapp.COMMUNICATE.CHATS.ChatsFragment;
-import com.example.candor.youthapp.GENERAL.GetTimeAgo;
 import com.example.candor.youthapp.GENERAL.MainActivity;
 import com.example.candor.youthapp.NotificationFragment.Notifications;
-import com.example.candor.youthapp.PROFILE.ProfileActivity;
 import com.example.candor.youthapp.PROFILE.Users;
 import com.example.candor.youthapp.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.google.firebase.database.ChildEventListener;
-import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ServerValue;
-import com.google.firebase.database.ValueEventListener;
+import com.miguelcatalan.materialsearchview.MaterialSearchView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -57,6 +47,8 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
     // ------- WIDGETS -/
     RecyclerView mChatsFragmentHorizontalRecycler, mChatsFragmentVerticalRecycler, vertical_recycler_view, horizontal_recycler_view;
 
+    Toolbar mToolbar;
+    MaterialSearchView mMaterialSearch;
 
 
     //----- CONTAINER -
@@ -87,11 +79,6 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
         vertical_recycler_view.setHasFixedSize(true);
         vertical_recycler_view.setLayoutManager(new LinearLayoutManager(InvitePeopleToMeetingActivity.this));
 
-
-        horizontal_recycler_view =findViewById(R.id.invite_people_to_meeting_horizontal_recycler_view);
-        horizontal_recycler_view.setHasFixedSize(true);
-        horizontal_recycler_view.setLayoutManager(new LinearLayoutManager(InvitePeopleToMeetingActivity.this));
-
         Button goButton = findViewById(R.id.invite_people_to_meeting_go_button);
         goButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,11 +86,48 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
                 Intent MeetingIntent = new Intent(InvitePeopleToMeetingActivity.this , MeetingActivity.class);
                 MeetingIntent.putExtra("meetingID" , mMeetingID);
                 startActivity(MeetingIntent);
+                finish();
             }
         });
 
+
+        mToolbar = findViewById(R.id.invite_people_search_toolbar);
+        mToolbar.setTitle("    Invite People to Meeting");
+        setSupportActionBar(mToolbar);
+
+        mMaterialSearch = findViewById(R.id.invite_people_search_view);
+        
+        setupSearch();
+
     }
 
+    private void setupSearch() {
+        mMaterialSearch.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                processQuery();
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+        });
+    }
+
+    private void processQuery() {
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_search_people , menu);
+        mMaterialSearch.setMenuItem(menu.findItem(R.id.action_search));
+        return true;
+    }
 
     @Override
     protected void onStart() {
@@ -117,8 +141,6 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
         ) {
             @Override
             protected void populateViewHolder(final UsersViewHolder viewHolder, final Users model, final int position) {
-
-
 
                 String userName = model.getName();
                 String status = model.getBio();
@@ -166,14 +188,9 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
                                     viewHolder.mInviteButton.setText("invite");
                                 }
                             });
-
-
                         }
-
                     }
                 });
-
-
             }
         };
         vertical_recycler_view.setAdapter(firebaseRecyclerAdapterVer);
@@ -221,5 +238,6 @@ public class InvitePeopleToMeetingActivity extends AppCompatActivity {
             }
         }*/
     }
+
 
 }

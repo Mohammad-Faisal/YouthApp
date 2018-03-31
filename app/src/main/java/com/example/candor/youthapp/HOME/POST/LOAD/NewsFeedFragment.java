@@ -123,6 +123,8 @@ public class NewsFeedFragment extends Fragment {
         return view;
     }
 
+
+
     private void initial_load_from_net()
     {
         DatabaseReference postsQueryRef = mRootRef.child("posts");

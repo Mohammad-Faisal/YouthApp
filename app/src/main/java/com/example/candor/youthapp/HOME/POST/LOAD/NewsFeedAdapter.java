@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -14,7 +15,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.candor.youthapp.CHAT.Messages;
 import com.example.candor.youthapp.GENERAL.MainActivity;
@@ -23,19 +23,17 @@ import com.example.candor.youthapp.HOME.POST.COMMENT.PostCommentAdapter;
 import com.example.candor.youthapp.HOME.POST.CREATE_SHOW.Posts;
 import com.example.candor.youthapp.HOME.POST.LIKE.LikersActivity;
 import com.example.candor.youthapp.HOME.POST.LIKE.Likes;
-import com.example.candor.youthapp.LazyImageLoading.ImageLoader;
 import com.example.candor.youthapp.NotificationFragment.Notifications;
 import com.example.candor.youthapp.PROFILE.ProfileActivity;
 import com.example.candor.youthapp.R;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ServerValue;
 import com.google.firebase.database.ValueEventListener;
+import com.nostra13.universalimageloader.core.ImageLoader;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
@@ -46,6 +44,8 @@ import java.util.Date;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+
+//import com.example.candor.youthapp.LazyImageLoading.ImageLoader;
 
 /**
  * Created by Mohammad Faisal on 1/21/2018.
@@ -60,7 +60,11 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     private final int VIEW_TYPE_ITEM = 0;
     private final int VIEW_TYPE_LOADING = 1;
     boolean isLoading;
-    public ImageLoader imageLoader;
+    //public ImageLoader imageLoader;
+
+    public ImageLoader imageLoader; // Get singleton instance
+    //imageLoader.displayImage(imageURL, holder.messageImage);
+
     private int visibleThreshold = 5;
     private int lastVisibleItem, totalItemCount;
     RecyclerView recyclerView;
@@ -93,7 +97,7 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         this.activity = activity;
         this.data = data;
         this.recyclerView = recyclerView;
-        imageLoader=new ImageLoader(context);
+        imageLoader= ImageLoader.getInstance();
         this.mRootRef = FirebaseDatabase.getInstance().getReference();
         this.mRootRef.keepSynced(true);
         this.mUserID = MainActivity.mUserID;
@@ -362,7 +366,12 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     String name = dataSnapshot.child("name").getValue().toString();
                     final String thumb_image_url = dataSnapshot.child("thumb_image").getValue().toString();
-                    imageLoader.DisplayImage(thumb_image_url,userViewHolder.postUserImage);
+
+                    //using universal image loading
+                    Bitmap bmp = imageLoader.loadImageSync(thumb_image_url);
+                    userViewHolder.postImage.setImageBitmap(bmp);
+                    
+
                     userViewHolder.postUserName.setText(name);
                 }
                 @Override

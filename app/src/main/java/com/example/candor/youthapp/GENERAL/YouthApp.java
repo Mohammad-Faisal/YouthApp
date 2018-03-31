@@ -1,6 +1,7 @@
 package com.example.candor.youthapp.GENERAL;
 
 import android.app.Application;
+import android.content.Context;
 import android.support.annotation.NonNull;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -13,6 +14,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.jakewharton.picasso.OkHttp3Downloader;
+import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;
@@ -40,7 +45,7 @@ public class YouthApp extends Application {
         super.onCreate();
         // FirebaseApp app  = FirebaseApp.initializeApp(Android.App.Candor.Context);
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
-
+        initImageLoader(this);
         //Picasso offline
         File httpCacheDirectory = new File(getCacheDir(), "picasso-cache");
         Cache cache = new Cache(httpCacheDirectory, 10 * 1024 * 1024);
@@ -134,6 +139,25 @@ public class YouthApp extends Application {
 */
         //online or offline feature offline feature
 
+    }
+
+    public static void initImageLoader(Context context) {
+
+        // This configuration tuning is custom. You can tune every option, you may tune some of them,
+        // or you can create default configuration by the
+        //  ImageLoaderConfiguration.createDefault(this);
+        // method.
+        //
+        ImageLoaderConfiguration.Builder config = new ImageLoaderConfiguration.Builder(context);
+        config.threadPriority(Thread.NORM_PRIORITY - 2);
+        config.denyCacheImageMultipleSizesInMemory();
+        config.diskCacheFileNameGenerator(new Md5FileNameGenerator());
+        config.diskCacheSize(50 * 1024 * 1024); // 50 MiB
+        config.tasksProcessingOrder(QueueProcessingType.LIFO);
+        config.writeDebugLogs(); // Remove for release app
+
+        // Initialize ImageLoader with configuration.
+        ImageLoader.getInstance().init(config.build());
     }
 
 }
